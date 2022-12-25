@@ -48,7 +48,7 @@ namespace AlarmGenerateService
 
 
         }
-        public static string path = @"F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\proba.txt";
+        public static string path = @"C:\Users\Admin\source\repos";
         //public static StreamWriter sw = new StreamWriter(path,true);
         
         public void WriteInFile(string message)

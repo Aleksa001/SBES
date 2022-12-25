@@ -1,0 +1,10 @@
+F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Client\bin\Debug\Client.exe.config
+F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Client\bin\Debug\Client.exe
+F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Client\bin\Debug\Client.pdb
+F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Client\bin\Debug\Common.dll
+F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Client\bin\Debug\Common.pdb
+F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Client\obj\Debug\Client.csprojAssemblyReference.cache
+F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Client\obj\Debug\Client.csproj.CopyComplete
+F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Client\obj\Debug\Client.exe
+F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Client\obj\Debug\Client.pdb

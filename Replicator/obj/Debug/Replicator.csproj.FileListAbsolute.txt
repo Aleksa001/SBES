@@ -1,0 +1,7 @@
+F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Replicator\bin\Debug\Replicator.exe.config
+F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Replicator\bin\Debug\Replicator.exe
+F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Replicator\bin\Debug\Replicator.pdb
+F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Replicator\obj\Debug\Replicator.csprojAssemblyReference.cache
+F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Replicator\obj\Debug\Replicator.csproj.CoreCompileInputs.cache
+F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Replicator\obj\Debug\Replicator.exe
+F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Replicator\obj\Debug\Replicator.pdb

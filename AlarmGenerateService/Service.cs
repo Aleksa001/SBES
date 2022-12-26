@@ -48,7 +48,8 @@ namespace AlarmGenerateService
 
 
         }
-        public static string path = @"C:\Users\Admin\source\repos";
+        public static string fileName = "proba.txt";
+        public static string path = Path.Combine(Environment.CurrentDirectory, @"Data\", fileName);
         //public static StreamWriter sw = new StreamWriter(path,true);
         
         public void WriteInFile(string message)

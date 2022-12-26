@@ -8,3 +8,13 @@ F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEK
 F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.CopyComplete
 F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\AlarmGenerateService\obj\Debug\AlarmGenerateService.exe
 F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\AlarmGenerateService\obj\Debug\AlarmGenerateService.pdb
+C:\Users\Admin\source\repos\AlarmGenerateService\AlarmGenerateService\bin\Debug\AlarmGenerateService.exe.config
+C:\Users\Admin\source\repos\AlarmGenerateService\AlarmGenerateService\bin\Debug\AlarmGenerateService.exe
+C:\Users\Admin\source\repos\AlarmGenerateService\AlarmGenerateService\bin\Debug\AlarmGenerateService.pdb
+C:\Users\Admin\source\repos\AlarmGenerateService\AlarmGenerateService\bin\Debug\Common.dll
+C:\Users\Admin\source\repos\AlarmGenerateService\AlarmGenerateService\bin\Debug\Common.pdb
+C:\Users\Admin\source\repos\AlarmGenerateService\AlarmGenerateService\obj\Debug\AlarmGenerateService.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\AlarmGenerateService\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\AlarmGenerateService\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.CopyComplete
+C:\Users\Admin\source\repos\AlarmGenerateService\AlarmGenerateService\obj\Debug\AlarmGenerateService.exe
+C:\Users\Admin\source\repos\AlarmGenerateService\AlarmGenerateService\obj\Debug\AlarmGenerateService.pdb

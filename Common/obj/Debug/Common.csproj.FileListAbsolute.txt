@@ -4,3 +4,8 @@ F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEK
 F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Common\obj\Debug\Common.dll
 F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Common\obj\Debug\Common.pdb
+C:\Users\Admin\source\repos\AlarmGenerateService\Common\bin\Debug\Common.dll
+C:\Users\Admin\source\repos\AlarmGenerateService\Common\bin\Debug\Common.pdb
+C:\Users\Admin\source\repos\AlarmGenerateService\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\AlarmGenerateService\Common\obj\Debug\Common.dll
+C:\Users\Admin\source\repos\AlarmGenerateService\Common\obj\Debug\Common.pdb

@@ -8,3 +8,13 @@ F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEK
 F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Client\obj\Debug\Client.csproj.CopyComplete
 F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Client\obj\Debug\Client.exe
 F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Client\obj\Debug\Client.pdb
+C:\Users\Admin\source\repos\AlarmGenerateService\Client\bin\Debug\Client.exe.config
+C:\Users\Admin\source\repos\AlarmGenerateService\Client\bin\Debug\Client.exe
+C:\Users\Admin\source\repos\AlarmGenerateService\Client\bin\Debug\Client.pdb
+C:\Users\Admin\source\repos\AlarmGenerateService\Client\bin\Debug\Common.dll
+C:\Users\Admin\source\repos\AlarmGenerateService\Client\bin\Debug\Common.pdb
+C:\Users\Admin\source\repos\AlarmGenerateService\Client\obj\Debug\Client.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\AlarmGenerateService\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\AlarmGenerateService\Client\obj\Debug\Client.csproj.CopyComplete
+C:\Users\Admin\source\repos\AlarmGenerateService\Client\obj\Debug\Client.exe
+C:\Users\Admin\source\repos\AlarmGenerateService\Client\obj\Debug\Client.pdb

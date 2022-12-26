@@ -1,0 +1,12 @@
+Alarm:
+	Message:probica
+	Client:DESKTOP-IOEL05G\proba
+	Date:26.12.2022. 14:34:01
+Alarm:
+	Message:probica2
+	Client:DESKTOP-IOEL05G\proba
+	Date:26.12.2022. 14:34:02
+Alarm:
+	Message:probica3
+	Client:DESKTOP-IOEL05G\proba
+	Date:26.12.2022. 14:34:02

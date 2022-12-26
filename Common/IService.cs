@@ -15,7 +15,7 @@ namespace Common
         void CurrentStateOfBase();
 
         [OperationContract]
-        Alarm CreateNew();
+        void CreateNew(Alarm a);
 
         [OperationContract]
         void DeleteAll();
@@ -23,8 +23,7 @@ namespace Common
         [OperationContract]
         void DeleteForClient();
 
-        [OperationContract]
-        void SendAlarm(Alarm a);
+       
        
 
     }

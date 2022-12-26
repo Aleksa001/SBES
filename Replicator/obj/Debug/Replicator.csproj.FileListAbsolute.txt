@@ -8,7 +8,7 @@ F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEK
 C:\Users\Admin\source\repos\AlarmGenerateService\Replicator\bin\Debug\Replicator.exe.config
 C:\Users\Admin\source\repos\AlarmGenerateService\Replicator\bin\Debug\Replicator.exe
 C:\Users\Admin\source\repos\AlarmGenerateService\Replicator\bin\Debug\Replicator.pdb
+C:\Users\Admin\source\repos\AlarmGenerateService\Replicator\obj\Debug\Replicator.csprojAssemblyReference.cache
 C:\Users\Admin\source\repos\AlarmGenerateService\Replicator\obj\Debug\Replicator.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\AlarmGenerateService\Replicator\obj\Debug\Replicator.exe
 C:\Users\Admin\source\repos\AlarmGenerateService\Replicator\obj\Debug\Replicator.pdb
-C:\Users\Admin\source\repos\AlarmGenerateService\Replicator\obj\Debug\Replicator.csprojAssemblyReference.cache

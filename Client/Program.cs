@@ -33,13 +33,13 @@ namespace Client
 
                 a.TimeOfGenerete = DateTime.Now;
                 a.Message = "probica";
-                proxy.SendAlarm(a);
+                proxy.CreateNew(a);
                 a.TimeOfGenerete = DateTime.Now;
                 a.Message = "probica2";
-                proxy.SendAlarm(a);
+                proxy.CreateNew(a);
                 a.TimeOfGenerete = DateTime.Now;
                 a.Message = "probica3";
-                proxy.SendAlarm(a);
+                proxy.CreateNew(a);
 
 
             }

@@ -25,26 +25,22 @@ namespace Client
         }
 
 
-        public void  SendAlarm(Alarm a)
-        {
-            try
-            {
-                factory.SendAlarm(a);
-            }
-            catch(Exception e)
-            {
-               
-                Console.WriteLine($"Error:{0}", e.Message);
-               
-            }
 
-        }
        
 
 
-        public Alarm CreateNew()
+        public void  CreateNew(Alarm a)
         {
-            throw new NotImplementedException();
+            try
+            {
+                factory.CreateNew(a);
+            }
+            catch (Exception e)
+            {
+
+                Console.WriteLine($"Error:{0}", e.Message);
+
+            }
         }
 
         public void CurrentStateOfBase()

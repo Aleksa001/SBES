@@ -41,7 +41,7 @@ namespace AlarmGenerateService
 
                 a.TimeOfGenerete = DateTime.Now;
                 a.Message = "probica";
-                proxy.Forward(a);
+                proxy.Receive(a);
 
 
             }

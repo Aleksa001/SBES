@@ -12,6 +12,6 @@ namespace Common
 	public interface IReplicator
 	{
 		[OperationContract]
-		void Forward(Alarm a);
+		void Receive(Alarm a);
 	}
 }

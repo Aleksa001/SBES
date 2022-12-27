@@ -20,7 +20,7 @@ namespace Replicator
 			binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows;
 			binding.Security.Transport.ProtectionLevel = System.Net.Security.ProtectionLevel.EncryptAndSign;
 
-			ServiceHost host = new ServiceHost(typeof(Replicator));
+			ServiceHost host = new ServiceHost(typeof(FirstReplicator));
 			host.AddServiceEndpoint(typeof(IReplicator), binding, address);
 
 			host.Open();

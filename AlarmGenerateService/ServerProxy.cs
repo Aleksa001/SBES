@@ -23,9 +23,9 @@ namespace AlarmGenerateService
 			//Credentials.Windows.AllowNtlm = false;
 		}
 
-		public void Forward(Alarm a)
+		public void Receive(Alarm a)
 		{
-			factory.Forward(a);
+			factory.Receive(a);
 		}
 	}
 }

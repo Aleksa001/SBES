@@ -22,23 +22,32 @@ namespace AlarmGenerateService
             a.NameOfClient = windowsIdentity.Name;
             Console.WriteLine($"Hello,{windowsIdentity.Name}");
             Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}\n\tDate:{a.TimeOfGenerete}");
-            string message = $"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}\n\tDate:{a.TimeOfGenerete}";
+            string message = $"Alarm:\n\tMessage:{a.Message}.\n\tClient:{a.NameOfClient}.\n\tDate:{a.TimeOfGenerete}.";
             WriteInFile(message);
         }
 
         public void CurrentStateOfBase()
         {
-            throw new NotImplementedException();
+            List<string> lst = File.ReadAllLines(path).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
+            foreach(string s in lst)
+            {
+                Console.WriteLine(s);
+            }
         }
 
         public void DeleteAll()
         {
-            throw new NotImplementedException();
+            File.Create(path).Close();
         }
 
         public void DeleteForClient()
         {
-            throw new NotImplementedException();
+            IIdentity identity = Thread.CurrentPrincipal.Identity;
+            WindowsIdentity windowsIdentity = identity as WindowsIdentity;
+
+            List<string> lst = File.ReadAllLines(path).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
+            lst.RemoveAll(x => x.Split('.')[1].Equals(windowsIdentity.Name));
+            File.WriteAllLines(path, lst);
         }
 
       

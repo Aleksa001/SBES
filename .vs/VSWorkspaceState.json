@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\AlarmGenerateService",
+    "\\Client",
+    "\\Common",
+    "\\Replicator"
+  ],
+  "SelectedNode": "\\AlarmGenerateService\\AlarmGenerateService.csproj",
+  "PreviewInSolutionExplorer": false
+}

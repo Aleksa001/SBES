@@ -45,17 +45,17 @@ namespace Client
 
         public void CurrentStateOfBase()
         {
-            throw new NotImplementedException();
+            factory.CurrentStateOfBase();
         }
 
         public void DeleteAll()
         {
-            throw new NotImplementedException();
+            factory.DeleteAll();
         }
 
         public void DeleteForClient()
         {
-            throw new NotImplementedException();
+            factory.DeleteForClient();
         }
 
         

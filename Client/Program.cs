@@ -40,6 +40,7 @@ namespace Client
                 a.TimeOfGenerete = DateTime.Now;
                 a.Message = "probica3";
                 proxy.CreateNew(a);
+                proxy.CurrentStateOfBase();
 
 
             }

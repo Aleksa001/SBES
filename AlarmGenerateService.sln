@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1927
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlarmGenerateService", "AlarmGenerateService\AlarmGenerateService.csproj", "{6EDEA486-54E2-419E-8E36-A8F1B5C49E8A}"
 EndProject
@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{2BF74098-5196-46EF-86DF-4C06425231DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Replicator", "Replicator\Replicator.csproj", "{B0237D1D-0B90-4AA1-AF9A-5D56F953BE66}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Replicator", "Replicator\Replicator.csproj", "{8257C0E7-7676-4225-A3B2-7C79953AD1C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlarmGenerateService2", "AlarmGenerateService2\AlarmGenerateService2.csproj", "{B2879646-39ED-4EE1-A109-A6FB6C56F9EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +31,14 @@ Global
 		{2BF74098-5196-46EF-86DF-4C06425231DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BF74098-5196-46EF-86DF-4C06425231DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BF74098-5196-46EF-86DF-4C06425231DC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B0237D1D-0B90-4AA1-AF9A-5D56F953BE66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0237D1D-0B90-4AA1-AF9A-5D56F953BE66}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B0237D1D-0B90-4AA1-AF9A-5D56F953BE66}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B0237D1D-0B90-4AA1-AF9A-5D56F953BE66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8257C0E7-7676-4225-A3B2-7C79953AD1C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8257C0E7-7676-4225-A3B2-7C79953AD1C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8257C0E7-7676-4225-A3B2-7C79953AD1C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8257C0E7-7676-4225-A3B2-7C79953AD1C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2879646-39ED-4EE1-A109-A6FB6C56F9EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2879646-39ED-4EE1-A109-A6FB6C56F9EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2879646-39ED-4EE1-A109-A6FB6C56F9EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2879646-39ED-4EE1-A109-A6FB6C56F9EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

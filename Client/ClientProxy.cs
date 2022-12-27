@@ -11,12 +11,12 @@ namespace Client
 {
     public class ClientProxy : ChannelFactory<IService>, IService, IDisposable
     {
-        IService factory;
-
         public ClientProxy(NetTcpBinding binding, string address): base(binding, address)
         {
             factory = this.CreateChannel();
         }
+        IService factory;
+
 
         public ClientProxy(NetTcpBinding binding, EndpointAddress address) : base(binding, address)
         {

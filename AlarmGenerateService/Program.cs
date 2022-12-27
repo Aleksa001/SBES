@@ -30,6 +30,24 @@ namespace AlarmGenerateService
 
             Console.WriteLine("Servis je pokrenut.");
 
+
+
+            EndpointAddress endpointAddress = new EndpointAddress(new Uri("net.tcp://localhost:9997/Replicator"),
+              EndpointIdentity.CreateUpnIdentity("proba2"));
+            Alarm a = new Alarm();
+
+            using(ServerProxy proxy = new ServerProxy(binding, endpointAddress))
+            {
+
+                a.TimeOfGenerete = DateTime.Now;
+                a.Message = "probica";
+                proxy.Forward(a);
+
+
+            }
+
+            Console.ReadLine();
+
             Console.ReadLine();
 
 

@@ -12,7 +12,7 @@ namespace AlarmGenerateService
 {
     public class Service : IService
     {
-        
+        List<string> buffer = new List<string>();
 
         public void  CreateNew(Alarm a)
         {
@@ -23,6 +23,7 @@ namespace AlarmGenerateService
             Console.WriteLine($"Hello,{windowsIdentity.Name}");
             Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}\n\tDate:{a.TimeOfGenerete}");
             string message = $"Alarm:\n\tMessage:{a.Message}.\n\tClient:{a.NameOfClient}.\n\tDate:{a.TimeOfGenerete}.";
+            buffer.Add(message);
             WriteInFile(message);
         }
 

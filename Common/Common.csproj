@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Alarm.cs" />
     <Compile Include="DataBase.cs" />
+    <Compile Include="IReplicator.cs" />
     <Compile Include="IService.cs" />
     <Compile Include="ITypeOfRisk.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

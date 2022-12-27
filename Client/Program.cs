@@ -41,7 +41,7 @@ namespace Client
                 a.Message = "probica3";
                 proxy.CreateNew(a);
                 proxy.CurrentStateOfBase();
-
+                
 
             }
 

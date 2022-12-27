@@ -1,21 +1,20 @@
-F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Replicator\bin\Debug\Replicator.exe.config
-F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Replicator\bin\Debug\Replicator.exe
-F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Replicator\bin\Debug\Replicator.pdb
-F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Replicator\obj\Debug\Replicator.csprojAssemblyReference.cache
-F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Replicator\obj\Debug\Replicator.csproj.CoreCompileInputs.cache
-F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Replicator\obj\Debug\Replicator.exe
-F:\4 godina 1 semestar\Sigurnost i bezbednost elektroenergetskog softvera\PROJEKATSBES\AlarmGenerateService\Replicator\obj\Debug\Replicator.pdb
-C:\Users\Admin\source\repos\AlarmGenerateService\Replicator\bin\Debug\Replicator.exe.config
-C:\Users\Admin\source\repos\AlarmGenerateService\Replicator\bin\Debug\Replicator.exe
-C:\Users\Admin\source\repos\AlarmGenerateService\Replicator\bin\Debug\Replicator.pdb
-C:\Users\Admin\source\repos\AlarmGenerateService\Replicator\obj\Debug\Replicator.csprojAssemblyReference.cache
-C:\Users\Admin\source\repos\AlarmGenerateService\Replicator\obj\Debug\Replicator.csproj.CoreCompileInputs.cache
-C:\Users\Admin\source\repos\AlarmGenerateService\Replicator\obj\Debug\Replicator.exe
-C:\Users\Admin\source\repos\AlarmGenerateService\Replicator\obj\Debug\Replicator.pdb
-C:\Users\pc\source\repos\SBES\Replicator\bin\Debug\Replicator.exe.config
-C:\Users\pc\source\repos\SBES\Replicator\bin\Debug\Replicator.exe
-C:\Users\pc\source\repos\SBES\Replicator\bin\Debug\Replicator.pdb
-C:\Users\pc\source\repos\SBES\Replicator\obj\Debug\Replicator.csprojAssemblyReference.cache
-C:\Users\pc\source\repos\SBES\Replicator\obj\Debug\Replicator.csproj.CoreCompileInputs.cache
-C:\Users\pc\source\repos\SBES\Replicator\obj\Debug\Replicator.exe
-C:\Users\pc\source\repos\SBES\Replicator\obj\Debug\Replicator.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Replicator\bin\Debug\Replicator.exe.config
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Replicator\bin\Debug\Replicator.exe
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Replicator\bin\Debug\Replicator.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Replicator\bin\Debug\Common.dll
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Replicator\bin\Debug\Common.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Replicator\obj\Debug\Replicator.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Replicator\obj\Debug\Replicator.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Replicator\obj\Debug\Replicator.csproj.CopyComplete
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Replicator\obj\Debug\Replicator.exe
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Replicator\obj\Debug\Replicator.pdb
+D:\PROJECTS\SBES\Replicator\bin\Debug\Replicator.exe.config
+D:\PROJECTS\SBES\Replicator\bin\Debug\Replicator.exe
+D:\PROJECTS\SBES\Replicator\bin\Debug\Replicator.pdb
+D:\PROJECTS\SBES\Replicator\bin\Debug\Common.dll
+D:\PROJECTS\SBES\Replicator\bin\Debug\Common.pdb
+D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.csproj.AssemblyReference.cache
+D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.csproj.CoreCompileInputs.cache
+D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.csproj.CopyComplete
+D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.exe
+D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.pdb

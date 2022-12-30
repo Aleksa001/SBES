@@ -47,7 +47,7 @@ namespace AlarmGenerateService
             WindowsIdentity windowsIdentity = identity as WindowsIdentity;
 
             List<string> lst = File.ReadAllLines(path).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
-            lst.RemoveAll(x => x.Split('.')[1].Equals(windowsIdentity.Name));
+            lst.RemoveAll(x => x.Split(':')[2].Equals(windowsIdentity.Name));
             File.WriteAllLines(path, lst);
         }
 

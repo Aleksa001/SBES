@@ -1,4 +1,5 @@
 ﻿using Common;
+using Common.RBAC;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -17,8 +18,8 @@ namespace AlarmGenerateService
 
             IIdentity identity = Thread.CurrentPrincipal.Identity;
             WindowsIdentity windowsIdentity = identity as WindowsIdentity;
-            a.NameOfClient = windowsIdentity.Name;
-            Console.WriteLine($"Hello,{windowsIdentity.Name}");
+            a.NameOfClient = Formater.ParseName(windowsIdentity.Name);
+            Console.WriteLine($"Hello,{a.NameOfClient}");
             Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}\n\tDate:{a.TimeOfGenerete}");
             string message = $"Alarm:\n\tMessage:{a.Message}.\n\tClient:{a.NameOfClient}.\n\tDate:{a.TimeOfGenerete}.";
             buffer.Add(a);

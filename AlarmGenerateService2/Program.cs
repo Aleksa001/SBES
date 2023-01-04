@@ -1,4 +1,5 @@
 ﻿using Common;
+using Common.RBAC;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +27,7 @@ namespace AlarmGenerateService2
             host.Open();
 
 
-            Console.WriteLine("Korisnik koji je pokrenuo servera :" + WindowsIdentity.GetCurrent().Name);
+            Console.WriteLine("Korisnik koji je pokrenuo servera :" + Formater.ParseName(WindowsIdentity.GetCurrent().Name));
 
             Console.WriteLine("Servis je pokrenut.");
 

@@ -18,3 +18,23 @@ D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.csproj.CoreCompileInputs.cache
 D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.csproj.CopyComplete
 D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.exe
 D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Replicator\bin\Debug\Replicator.exe.config
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Replicator\bin\Debug\Replicator.exe
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Replicator\bin\Debug\Replicator.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Replicator\bin\Debug\Common.dll
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Replicator\bin\Debug\Common.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Replicator\obj\Debug\Replicator.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Replicator\obj\Debug\Replicator.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Replicator\obj\Debug\Replicator.csproj.CopyComplete
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Replicator\obj\Debug\Replicator.exe
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Replicator\obj\Debug\Replicator.pdb
+C:\Users\Admin\source\repos\SBES\Replicator\bin\Debug\Replicator.exe.config
+C:\Users\Admin\source\repos\SBES\Replicator\bin\Debug\Replicator.exe
+C:\Users\Admin\source\repos\SBES\Replicator\bin\Debug\Replicator.pdb
+C:\Users\Admin\source\repos\SBES\Replicator\bin\Debug\Common.dll
+C:\Users\Admin\source\repos\SBES\Replicator\bin\Debug\Common.pdb
+C:\Users\Admin\source\repos\SBES\Replicator\obj\Debug\Replicator.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\SBES\Replicator\obj\Debug\Replicator.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\SBES\Replicator\obj\Debug\Replicator.csproj.CopyComplete
+C:\Users\Admin\source\repos\SBES\Replicator\obj\Debug\Replicator.exe
+C:\Users\Admin\source\repos\SBES\Replicator\obj\Debug\Replicator.pdb

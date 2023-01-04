@@ -27,7 +27,6 @@ namespace Client
                EndpointIdentity.CreateUpnIdentity("proba"));
 
             Alarm a = new Alarm();
-            Alarm a2 = new Alarm();
             
             using (ClientProxy proxy = new ClientProxy(binding, endpointAddress))
             {
@@ -35,11 +34,15 @@ namespace Client
                 a.TimeOfGenerete = DateTime.Now;
                 a.Message = "probica";
                 proxy.CreateNew(a);
-                a2.TimeOfGenerete = DateTime.Now;
-                a2.Message = "probica2";
-                proxy.CreateNew(a2);
+                a.TimeOfGenerete = DateTime.Now;
+                a.Message = "probica2";
+                proxy.CreateNew(a);
+                a.TimeOfGenerete = DateTime.Now;
+                a.Message = "probica3";
+                proxy.CreateNew(a);
                 proxy.CurrentStateOfBase();
                 
+
             }
 
             Console.ReadLine();

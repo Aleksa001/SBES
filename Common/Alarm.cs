@@ -2,11 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace AlarmGenerateService
 {
+    [DataContract]
     public class Alarm
     {
         private DateTime timeOfGenerete;
@@ -22,10 +24,13 @@ namespace AlarmGenerateService
             this.Message = message;
             this.TypeOfRisk = typeOfRisk;
         }
-
+        [DataMember]
         public DateTime TimeOfGenerete { get => timeOfGenerete; set => timeOfGenerete = value; }
+        [DataMember]
         public string NameOfClient { get => nameOfClient; set => nameOfClient = value; }
+        [DataMember]
         public string Message { get => message; set => message = value; }
+        [DataMember]
         public TypeOfRisk TypeOfRisk { get => typeOfRisk; set => typeOfRisk = value; }
     }
 }

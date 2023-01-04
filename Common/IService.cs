@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace Common
     public interface IService
     {
         [OperationContract]
+        [FaultContract(typeof(SecurityException))]
         void CurrentStateOfBase();
 
         [OperationContract]
@@ -23,8 +25,7 @@ namespace Common
         [OperationContract]
         void DeleteForClient();
 
-       
-       
+               
 
     }
 }

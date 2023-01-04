@@ -38,3 +38,23 @@ C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Client\
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Client\obj\Debug\Client.csproj.CopyComplete
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Client\obj\Debug\Client.exe
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Client\obj\Debug\Client.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Client\bin\Debug\Client.exe.config
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Client\bin\Debug\Client.exe
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Client\bin\Debug\Client.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Client\bin\Debug\Common.dll
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Client\bin\Debug\Common.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Client\obj\Debug\Client.csproj.CopyComplete
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Client\obj\Debug\Client.exe
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Client\obj\Debug\Client.pdb
+C:\Users\Admin\source\repos\SBES\Client\bin\Debug\Client.exe.config
+C:\Users\Admin\source\repos\SBES\Client\bin\Debug\Client.exe
+C:\Users\Admin\source\repos\SBES\Client\bin\Debug\Client.pdb
+C:\Users\Admin\source\repos\SBES\Client\bin\Debug\Common.dll
+C:\Users\Admin\source\repos\SBES\Client\bin\Debug\Common.pdb
+C:\Users\Admin\source\repos\SBES\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\SBES\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\SBES\Client\obj\Debug\Client.csproj.CopyComplete
+C:\Users\Admin\source\repos\SBES\Client\obj\Debug\Client.exe
+C:\Users\Admin\source\repos\SBES\Client\obj\Debug\Client.pdb

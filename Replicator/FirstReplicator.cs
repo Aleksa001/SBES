@@ -11,14 +11,13 @@ namespace Replicator
 {
     class FirstReplicator : Replicator
     {
-		public override void Receive(Alarm a)
+		public override void Receive(List<Alarm> alarmi)
 		{
-			IIdentity identity = Thread.CurrentPrincipal.Identity;
-			WindowsIdentity windowsIdentity = identity as WindowsIdentity;
-			a.NameOfClient = windowsIdentity.Name;
-			Console.WriteLine($"Hello,{windowsIdentity.Name}");
-			Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}\n\tDate:{a.TimeOfGenerete}");
-			string message = $"Alarm:\n\tMessage:{a.Message}.\n\tClient:{a.NameOfClient}.\n\tDate:{a.TimeOfGenerete}.";
+
+			Replicator.dataForRepl = alarmi;
+			SecondReplicator secondReplicator = new SecondReplicator(alarmi);
+			
+
 		}
 	}
 }

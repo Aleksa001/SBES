@@ -27,3 +27,14 @@ D:\PROJECTS\SBES\Common\obj\Debug\Common.csproj.AssemblyReference.cache
 D:\PROJECTS\SBES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 D:\PROJECTS\SBES\Common\obj\Debug\Common.dll
 D:\PROJECTS\SBES\Common\obj\Debug\Common.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Common\bin\Debug\Common.dll
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Common\bin\Debug\Common.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Common\obj\Debug\Common.dll
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Common\obj\Debug\Common.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\SBES\Common\bin\Debug\Common.dll
+C:\Users\Admin\source\repos\SBES\Common\bin\Debug\Common.pdb
+C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.dll
+C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.pdb

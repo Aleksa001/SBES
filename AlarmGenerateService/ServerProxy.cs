@@ -23,7 +23,7 @@ namespace AlarmGenerateService
 			//Credentials.Windows.AllowNtlm = false;
 		}
 
-		public void Receive(Alarm a)
+		public void Receive(List<Alarm> a)
 		{
 			factory.Receive(a);
 		}

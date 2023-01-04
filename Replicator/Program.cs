@@ -28,6 +28,7 @@ namespace Replicator
 
 			Console.WriteLine("Servis je pokrenut.");
 
+
 			Console.ReadLine();
 
 		}

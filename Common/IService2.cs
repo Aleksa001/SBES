@@ -9,9 +9,12 @@ using System.Threading.Tasks;
 namespace Common
 {
 	[ServiceContract]
-	public interface IReplicator
+	public interface IService2
 	{
 		[OperationContract]
-		void Receive(List<Alarm> alarmi);
+		void Receive(List<Alarm> a);
+
+		[OperationContract]
+		void WriteInFile(string message);
 	}
 }

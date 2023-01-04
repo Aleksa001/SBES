@@ -45,7 +45,18 @@ namespace Client
 
         public void CurrentStateOfBase()
         {
-            factory.CurrentStateOfBase();
+            try
+            {
+                factory.CurrentStateOfBase();
+			}
+            catch (FaultException<SecurityException> e)
+            {
+                Console.WriteLine("Error while trying to Read : {0}", e.Detail.Message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error while trying to Read : {0}", e.Message);
+            }
         }
 
         public void DeleteAll()

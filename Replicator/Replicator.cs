@@ -12,6 +12,7 @@ namespace Replicator
 {
 	public class Replicator : IReplicator
 	{
-		virtual public void Receive(Alarm a) { }
+		public static List<Alarm> dataForRepl = new List<Alarm>();
+		virtual public void Receive(List<Alarm> alarmi) { }
 	}
 }

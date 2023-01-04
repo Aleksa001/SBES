@@ -22,6 +22,7 @@ namespace AlarmGenerateService
 
             ServiceHost host = new ServiceHost(typeof(Service));
             host.AddServiceEndpoint(typeof(IService), binding, address);
+           
 
             host.Open();
             
@@ -32,21 +33,21 @@ namespace AlarmGenerateService
 
 
 
-            EndpointAddress endpointAddress = new EndpointAddress(new Uri("net.tcp://localhost:9997/Replicator"),
+           EndpointAddress endpointAddress = new EndpointAddress(new Uri("net.tcp://localhost:9997/Replicator"),
               EndpointIdentity.CreateUpnIdentity("proba2"));
-            Alarm a = new Alarm();
 
+			while (true) { 
             using(ServerProxy proxy = new ServerProxy(binding, endpointAddress))
             {
-
-                a.TimeOfGenerete = DateTime.Now;
-                a.Message = "probica";
-                proxy.Receive(a);
-
-
+                List<Alarm> alarmi = Service.buffer;
+                    if (alarmi.Count != 0)
+                    {
+                        proxy.Receive(alarmi);
+                        break;
+                    }
+            }
             }
 
-            Console.ReadLine();
 
             Console.ReadLine();
 

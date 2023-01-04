@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Security.Principal;
+using System.ServiceModel;
 using System.Threading;
 
 namespace AlarmGenerateService
@@ -12,7 +13,7 @@ namespace AlarmGenerateService
     public class Service : IService
     {
         public static List<Alarm> buffer = new List<Alarm>();
-
+        public CustomPrincipal princ = new CustomPrincipal();
         public void CreateNew(Alarm a)
         {
 
@@ -29,8 +30,8 @@ namespace AlarmGenerateService
 
         public void CurrentStateOfBase()
         {
-            //if (Thread.CurrentPrincipal.IsInRole("Reader"))
-            //{
+            if (princ.IsInRole("AlarmReader"))
+            {
             Console.WriteLine("BAZA:");
             List<string> lst = File.ReadAllLines(path).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
             foreach (string s in lst)
@@ -38,15 +39,15 @@ namespace AlarmGenerateService
 
                 Console.WriteLine(s);
             }
-            //}
-            //else
-            //{
-            //   string name = Thread.CurrentPrincipal.Identity.Name;
-            //   DateTime time = DateTime.Now;
-            //   string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
-            //       "For this method need to be member of group Reader.", name, time.TimeOfDay);
-            //   throw new FaultException<SecurityException>(new SecurityException(message));
-            //}
+            }
+            else
+            {
+               string name = Thread.CurrentPrincipal.Identity.Name;
+               DateTime time = DateTime.Now;
+               string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
+                   "For this method need to be member of group Reader.", name, time.TimeOfDay);
+               throw new FaultException<SecurityException>(new SecurityException(message));
+            }
         }
 
         public void DeleteAll()

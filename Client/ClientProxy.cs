@@ -69,6 +69,9 @@ namespace Client
             factory.DeleteForClient();
         }
 
-        
+        public void WriteInFile(Alarm a)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

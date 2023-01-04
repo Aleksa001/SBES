@@ -8,3 +8,33 @@ Ime klijenta  DESKTOP-IOEL05G\proba
 Poruka  probica2
 Rizik  Low
 ------------------------------------
+Vreme generisanja alarma 4.1.2023. 14:07:40
+Ime klijenta  DESKTOP-IOEL05G\proba
+Poruka  probica
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 4.1.2023. 14:07:40
+Ime klijenta  DESKTOP-IOEL05G\proba
+Poruka  probica2
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 4.1.2023. 14:11:27
+Ime klijenta  DESKTOP-IOEL05G\proba
+Poruka  probica
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 4.1.2023. 14:11:27
+Ime klijenta  DESKTOP-IOEL05G\proba
+Poruka  probica2
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 4.1.2023. 14:12:28
+Ime klijenta  DESKTOP-IOEL05G\proba
+Poruka  probica
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 4.1.2023. 14:12:28
+Ime klijenta  DESKTOP-IOEL05G\proba
+Poruka  probica2
+Rizik  Low
+------------------------------------

@@ -4,10 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Security.Principal;
-using System.ServiceModel;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace AlarmGenerateService
 {
@@ -15,7 +12,7 @@ namespace AlarmGenerateService
     {
         public static List<Alarm> buffer = new List<Alarm>();
 
-        public void  CreateNew(Alarm a)
+        public void CreateNew(Alarm a)
         {
 
             IIdentity identity = Thread.CurrentPrincipal.Identity;
@@ -33,21 +30,21 @@ namespace AlarmGenerateService
         {
             //if (Thread.CurrentPrincipal.IsInRole("Reader"))
             //{
-                Console.WriteLine("BAZA:");
-                List<string> lst = File.ReadAllLines(path).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
-                foreach (string s in lst)
-                {
+            Console.WriteLine("BAZA:");
+            List<string> lst = File.ReadAllLines(path).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
+            foreach (string s in lst)
+            {
 
-                    Console.WriteLine(s);
-                }
-			//}
-			//else
-			//{
-             //   string name = Thread.CurrentPrincipal.Identity.Name;
-             //   DateTime time = DateTime.Now;
-             //   string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
-             //       "For this method need to be member of group Reader.", name, time.TimeOfDay);
-             //   throw new FaultException<SecurityException>(new SecurityException(message));
+                Console.WriteLine(s);
+            }
+            //}
+            //else
+            //{
+            //   string name = Thread.CurrentPrincipal.Identity.Name;
+            //   DateTime time = DateTime.Now;
+            //   string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
+            //       "For this method need to be member of group Reader.", name, time.TimeOfDay);
+            //   throw new FaultException<SecurityException>(new SecurityException(message));
             //}
         }
 
@@ -66,11 +63,11 @@ namespace AlarmGenerateService
             File.WriteAllLines(path, lst);
         }
 
-      
+
         public static string fileName = "proba.txt";
         public static string path = Path.Combine(Environment.CurrentDirectory, @"Data\", fileName);
         //public static StreamWriter sw = new StreamWriter(path,true);
-        
+
         public void WriteInFile(Alarm a)
         {
 
@@ -82,10 +79,10 @@ namespace AlarmGenerateService
                 sw.WriteLine("Rizik  " + a.TypeOfRisk.ToString(), true);
                 sw.WriteLine("------------------------------------", true);
             }
-                
-            
+
+
         }
 
-      
+       
     }
 }

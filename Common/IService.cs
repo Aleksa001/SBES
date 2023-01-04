@@ -25,7 +25,8 @@ namespace Common
         [OperationContract]
         void DeleteForClient();
 
-               
+        [OperationContract]
+        void WriteInFile(Alarm a);
 
     }
 }

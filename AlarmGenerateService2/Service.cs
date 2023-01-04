@@ -15,7 +15,11 @@ namespace AlarmGenerateService2
 		{
 			foreach (var a in alarmi)
 			{
-				Console.WriteLine(a.Message);
+				Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}\n\tDate:{a.TimeOfGenerete}");
+				Console.WriteLine("\n-----------------------------------------------------------------------------------------\n");
+				string message = $"Alarm:\n\tMessage:{a.Message}.\n\tClient:{a.NameOfClient}.\n\tDate:{a.TimeOfGenerete}.";
+				WriteInFile(message);
+               
 				//WriteInFile(a.Message);
 			}
 		}
@@ -28,6 +32,7 @@ namespace AlarmGenerateService2
 			using (StreamWriter sw = new StreamWriter(path, true))
 			{
 				sw.WriteLine(message, true);
+				sw.WriteLine("---------------------------------------------------------------------------");
 			}
 
 

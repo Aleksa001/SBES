@@ -35,10 +35,10 @@ C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.csproj.GenerateResource
 C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.dll
 C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.pdb
-C:\Users\pc\source\repos\SBES\Common\bin\Debug\Common.dll
-C:\Users\pc\source\repos\SBES\Common\bin\Debug\Common.pdb
-C:\Users\pc\source\repos\SBES\Common\obj\Debug\Common.RolesConfigFile.resources
-C:\Users\pc\source\repos\SBES\Common\obj\Debug\Common.csproj.GenerateResource.cache
-C:\Users\pc\source\repos\SBES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
-C:\Users\pc\source\repos\SBES\Common\obj\Debug\Common.dll
-C:\Users\pc\source\repos\SBES\Common\obj\Debug\Common.pdb
+C:\Users\pc\Source\Repos\SBES\Common\bin\Debug\Common.dll
+C:\Users\pc\Source\Repos\SBES\Common\bin\Debug\Common.pdb
+C:\Users\pc\Source\Repos\SBES\Common\obj\Debug\Common.RolesConfigFile.resources
+C:\Users\pc\Source\Repos\SBES\Common\obj\Debug\Common.csproj.GenerateResource.cache
+C:\Users\pc\Source\Repos\SBES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\pc\Source\Repos\SBES\Common\obj\Debug\Common.dll
+C:\Users\pc\Source\Repos\SBES\Common\obj\Debug\Common.pdb

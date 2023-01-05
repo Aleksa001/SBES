@@ -19,28 +19,40 @@ namespace AlarmGenerateService
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
             string userName = Formater.ParseName(principal.Identity.Name);
-            if (Thread.CurrentPrincipal.IsInRole("AlarmGenerator"))
+
+            try
             {
+                if (Thread.CurrentPrincipal.IsInRole("AlarmGenerator"))
+                {
 
-
-            IIdentity identity = Thread.CurrentPrincipal.Identity;
-            WindowsIdentity windowsIdentity = identity as WindowsIdentity;
-            a.NameOfClient = Formater.ParseName(windowsIdentity.Name);
-            Console.WriteLine($"Hello,{a.NameOfClient}");
-            Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}\n\tDate:{a.TimeOfGenerete}");
-            string message = $"Alarm:\n\tMessage:{a.Message}.\n\tClient:{a.NameOfClient}.\n\tDate:{a.TimeOfGenerete}.";
-            buffer.Add(a);
-            Console.WriteLine(buffer.Count);
-            WriteInFile(a);
+                    IIdentity identity = Thread.CurrentPrincipal.Identity;
+                    WindowsIdentity windowsIdentity = identity as WindowsIdentity;
+                    a.NameOfClient = Formater.ParseName(windowsIdentity.Name);
+                    Console.WriteLine($"Hello,{a.NameOfClient}");
+                    Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}\n\tDate:{a.TimeOfGenerete}");
+                    string message = $"Alarm:\n\tMessage:{a.Message}.\n\tClient:{a.NameOfClient}.\n\tDate:{a.TimeOfGenerete}.";
+                    buffer.Add(a);
+                    Console.WriteLine(buffer.Count);
+                    WriteInFile(a);
+                } else
+                {
+                    string name = Thread.CurrentPrincipal.Identity.Name;
+                    DateTime time = DateTime.Now;
+                    string message = String.Format("Access is denied. User {0} try to call AlarmGenerator method (time : {1}). " +
+                        "For this method need to be member of group AlarmGenerator.", name, time.TimeOfDay);
+                    throw new FaultException<SecurityException>(new SecurityException(message));
+                }
             }
-            else
+            catch (FaultException<SecurityException>)
             {
+
                 string name = Thread.CurrentPrincipal.Identity.Name;
                 DateTime time = DateTime.Now;
-                string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
-                    "For this method need to be member of group Reader.", name, time.TimeOfDay);
+                string message = String.Format("Access is denied. User {0} try to call AlarmGenerator method (time : {1}). " +
+                    "For this method need to be member of group AlarmGenerator.", name, time.TimeOfDay);
                 throw new FaultException<SecurityException>(new SecurityException(message));
             }
+
         }
 
         public void CurrentStateOfBase()
@@ -49,8 +61,8 @@ namespace AlarmGenerateService
             string userName = Formater.ParseName(principal.Identity.Name);
             if (Thread.CurrentPrincipal.IsInRole("Read"))
             {
-                Console.WriteLine("Uspesno autorizovan Read");
-            Console.WriteLine("BAZA:");
+                Console.WriteLine("Read successfully executed");
+            Console.WriteLine("BASE:");
             List<string> lst = File.ReadAllLines(path).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
             foreach (string s in lst)
             {
@@ -72,18 +84,28 @@ namespace AlarmGenerateService
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
             string userName = Formater.ParseName(principal.Identity.Name);
-            if (Thread.CurrentPrincipal.IsInRole("AlarmAdmin"))
+
+            try
+            {
+                if (Thread.CurrentPrincipal.IsInRole("AlarmAdmin"))
+                {
+                
+                        Console.WriteLine("Delete All successfully executed");
+                        File.Create(path).Close();
+                } 
+
+            }
+            catch (Exception)
             {
 
-                File.Create(path).Close();
-            } else
-            {
                 string name = Thread.CurrentPrincipal.Identity.Name;
                 DateTime time = DateTime.Now;
                 string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
                     "For this method need to be member of group Reader.", name, time.TimeOfDay);
                 throw new FaultException<SecurityException>(new SecurityException(message));
             }
+
+            
         }
 
         public void DeleteForClient()

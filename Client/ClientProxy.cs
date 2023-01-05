@@ -34,13 +34,20 @@ namespace Client
             try
             {
                 factory.CreateNew(a);
+           
+
             }
-            catch (Exception e)
+            catch (FaultException<SecurityException> e)
+            {
+                Console.WriteLine("Error while trying to Read : {0}", e.Detail.Message);
+            }
+            catch (Exception)
             {
 
-                Console.WriteLine($"Error:{0}", e.Message);
-
+                throw;
             }
+            
+              
         }
 
         public void CurrentStateOfBase()

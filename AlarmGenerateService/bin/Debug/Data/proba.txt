@@ -18,3 +18,13 @@ Ime klijenta  proba
 Poruka  probica2
 Rizik  Low
 ------------------------------------
+Vreme generisanja alarma 5.1.2023. 18:29:24
+Ime klijenta  proba
+Poruka  probica
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 5.1.2023. 18:29:24
+Ime klijenta  proba
+Poruka  probica2
+Rizik  Low
+------------------------------------

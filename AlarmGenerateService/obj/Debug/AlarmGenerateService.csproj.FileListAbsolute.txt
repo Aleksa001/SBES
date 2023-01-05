@@ -18,16 +18,6 @@ C:\Users\Admin\source\repos\AlarmGenerateService\AlarmGenerateService\obj\Debug\
 C:\Users\Admin\source\repos\AlarmGenerateService\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.CopyComplete
 C:\Users\Admin\source\repos\AlarmGenerateService\AlarmGenerateService\obj\Debug\AlarmGenerateService.exe
 C:\Users\Admin\source\repos\AlarmGenerateService\AlarmGenerateService\obj\Debug\AlarmGenerateService.pdb
-C:\Users\pc\Source\Repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.exe
-C:\Users\pc\Source\Repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.pdb
-C:\Users\pc\source\repos\SBES\AlarmGenerateService\bin\Debug\AlarmGenerateService.exe.config
-C:\Users\pc\source\repos\SBES\AlarmGenerateService\bin\Debug\AlarmGenerateService.exe
-C:\Users\pc\source\repos\SBES\AlarmGenerateService\bin\Debug\AlarmGenerateService.pdb
-C:\Users\pc\source\repos\SBES\AlarmGenerateService\bin\Debug\Common.dll
-C:\Users\pc\source\repos\SBES\AlarmGenerateService\bin\Debug\Common.pdb
-C:\Users\pc\source\repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.csprojAssemblyReference.cache
-C:\Users\pc\source\repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.CoreCompileInputs.cache
-C:\Users\pc\source\repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.CopyComplete
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\AlarmGenerateService\bin\Debug\AlarmGenerateService.exe.config
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\AlarmGenerateService\bin\Debug\AlarmGenerateService.exe
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\AlarmGenerateService\bin\Debug\AlarmGenerateService.pdb
@@ -68,3 +58,13 @@ C:\Users\Admin\source\repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateSer
 C:\Users\Admin\source\repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.CopyComplete
 C:\Users\Admin\source\repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.exe
 C:\Users\Admin\source\repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.pdb
+C:\Users\pc\source\repos\SBES\AlarmGenerateService\bin\Debug\AlarmGenerateService.exe.config
+C:\Users\pc\source\repos\SBES\AlarmGenerateService\bin\Debug\AlarmGenerateService.exe
+C:\Users\pc\source\repos\SBES\AlarmGenerateService\bin\Debug\AlarmGenerateService.pdb
+C:\Users\pc\source\repos\SBES\AlarmGenerateService\bin\Debug\Common.dll
+C:\Users\pc\source\repos\SBES\AlarmGenerateService\bin\Debug\Common.pdb
+C:\Users\pc\source\repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.csprojAssemblyReference.cache
+C:\Users\pc\source\repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.CopyComplete
+C:\Users\pc\source\repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.exe
+C:\Users\pc\source\repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.pdb

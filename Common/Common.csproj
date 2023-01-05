@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Windows.Forms" />
@@ -51,6 +52,8 @@
     <Compile Include="IService2.cs" />
     <Compile Include="ITypeOfRisk.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RBAC\CustomAuthorizationManager.cs" />
+    <Compile Include="RBAC\CustomAuthorizationPolicy.cs" />
     <Compile Include="RBAC\CustomPrincipal.cs" />
     <Compile Include="RBAC\Formater.cs" />
     <Compile Include="RBAC\RolesConfig.cs" />

@@ -28,3 +28,23 @@ Ime klijenta  proba
 Poruka  probica2
 Rizik  Low
 ------------------------------------
+Vreme generisanja alarma 5.1.2023. 19:20:02
+Ime klijenta  wcfclient
+Poruka  probica
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 5.1.2023. 19:20:02
+Ime klijenta  wcfclient
+Poruka  probica2
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 5.1.2023. 19:40:51
+Ime klijenta  wcfservice
+Poruka  probica
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 5.1.2023. 19:40:51
+Ime klijenta  wcfservice
+Poruka  probica2
+Rizik  Low
+------------------------------------

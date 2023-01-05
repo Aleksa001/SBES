@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Security.Principal;
 using System.ServiceModel;
 using System.Threading;
@@ -13,9 +14,14 @@ namespace AlarmGenerateService
     public class Service : IService
     {
         public static List<Alarm> buffer = new List<Alarm>();
-        public CustomPrincipal princ = new CustomPrincipal();
+        public static CustomAuthorizationManager princ = new CustomAuthorizationManager();
         public void CreateNew(Alarm a)
         {
+            CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
+            string userName = Formater.ParseName(principal.Identity.Name);
+            if (Thread.CurrentPrincipal.IsInRole("AlarmGenerator"))
+            {
+
 
             IIdentity identity = Thread.CurrentPrincipal.Identity;
             WindowsIdentity windowsIdentity = identity as WindowsIdentity;
@@ -26,12 +32,24 @@ namespace AlarmGenerateService
             buffer.Add(a);
             Console.WriteLine(buffer.Count);
             WriteInFile(a);
+            }
+            else
+            {
+                string name = Thread.CurrentPrincipal.Identity.Name;
+                DateTime time = DateTime.Now;
+                string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
+                    "For this method need to be member of group Reader.", name, time.TimeOfDay);
+                throw new FaultException<SecurityException>(new SecurityException(message));
+            }
         }
 
         public void CurrentStateOfBase()
         {
-            if (princ.IsInRole("AlarmReader"))
+            CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
+            string userName = Formater.ParseName(principal.Identity.Name);
+            if (Thread.CurrentPrincipal.IsInRole("Read"))
             {
+                Console.WriteLine("Uspesno autorizovan Read");
             Console.WriteLine("BAZA:");
             List<string> lst = File.ReadAllLines(path).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
             foreach (string s in lst)
@@ -52,7 +70,20 @@ namespace AlarmGenerateService
 
         public void DeleteAll()
         {
-            File.Create(path).Close();
+            CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
+            string userName = Formater.ParseName(principal.Identity.Name);
+            if (Thread.CurrentPrincipal.IsInRole("AlarmAdmin"))
+            {
+
+                File.Create(path).Close();
+            } else
+            {
+                string name = Thread.CurrentPrincipal.Identity.Name;
+                DateTime time = DateTime.Now;
+                string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
+                    "For this method need to be member of group Reader.", name, time.TimeOfDay);
+                throw new FaultException<SecurityException>(new SecurityException(message));
+            }
         }
 
         public void DeleteForClient()

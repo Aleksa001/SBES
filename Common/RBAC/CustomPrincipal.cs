@@ -10,6 +10,10 @@ namespace Common.RBAC
     public class CustomPrincipal : IPrincipal
     {
         WindowsIdentity identity = null;
+        public CustomPrincipal(WindowsIdentity windowsIdentity)
+        {
+            identity = windowsIdentity;
+        }
         public IIdentity Identity
         {
             get { return identity; }

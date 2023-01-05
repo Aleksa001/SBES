@@ -25,3 +25,13 @@ C:\Users\Admin\source\repos\SBES\AlarmGenerateService2\obj\Debug\AlarmGenerateSe
 C:\Users\Admin\source\repos\SBES\AlarmGenerateService2\obj\Debug\AlarmGenerateService2.csproj.CopyComplete
 C:\Users\Admin\source\repos\SBES\AlarmGenerateService2\obj\Debug\AlarmGenerateService2.exe
 C:\Users\Admin\source\repos\SBES\AlarmGenerateService2\obj\Debug\AlarmGenerateService2.pdb
+C:\Users\pc\source\repos\SBES\AlarmGenerateService2\bin\Debug\AlarmGenerateService2.exe.config
+C:\Users\pc\source\repos\SBES\AlarmGenerateService2\bin\Debug\AlarmGenerateService2.exe
+C:\Users\pc\source\repos\SBES\AlarmGenerateService2\bin\Debug\AlarmGenerateService2.pdb
+C:\Users\pc\source\repos\SBES\AlarmGenerateService2\bin\Debug\Common.dll
+C:\Users\pc\source\repos\SBES\AlarmGenerateService2\bin\Debug\Common.pdb
+C:\Users\pc\source\repos\SBES\AlarmGenerateService2\obj\Debug\AlarmGenerateService2.csprojAssemblyReference.cache
+C:\Users\pc\source\repos\SBES\AlarmGenerateService2\obj\Debug\AlarmGenerateService2.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\SBES\AlarmGenerateService2\obj\Debug\AlarmGenerateService2.csproj.CopyComplete
+C:\Users\pc\source\repos\SBES\AlarmGenerateService2\obj\Debug\AlarmGenerateService2.exe
+C:\Users\pc\source\repos\SBES\AlarmGenerateService2\obj\Debug\AlarmGenerateService2.pdb

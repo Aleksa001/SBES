@@ -4,8 +4,9 @@
     "\\AlarmGenerateService",
     "\\Client",
     "\\Common",
+    "\\Common\\RBAC",
     "\\Replicator"
   ],
-  "SelectedNode": "\\AlarmGenerateService\\AlarmGenerateService.csproj",
+  "SelectedNode": "\\Common\\RBAC",
   "PreviewInSolutionExplorer": false
 }

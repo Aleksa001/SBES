@@ -9,12 +9,6 @@ C:\Users\Admin\source\repos\AlarmGenerateService\Common\bin\Debug\Common.pdb
 C:\Users\Admin\source\repos\AlarmGenerateService\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\AlarmGenerateService\Common\obj\Debug\Common.dll
 C:\Users\Admin\source\repos\AlarmGenerateService\Common\obj\Debug\Common.pdb
-C:\Users\pc\source\repos\SBES\Common\bin\Debug\Common.dll
-C:\Users\pc\source\repos\SBES\Common\bin\Debug\Common.pdb
-C:\Users\pc\source\repos\SBES\Common\obj\Debug\Common.csprojAssemblyReference.cache
-C:\Users\pc\source\repos\SBES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
-C:\Users\pc\source\repos\SBES\Common\obj\Debug\Common.dll
-C:\Users\pc\source\repos\SBES\Common\obj\Debug\Common.pdb
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Common\bin\Debug\Common.dll
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Common\bin\Debug\Common.pdb
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Common\obj\Debug\Common.csproj.AssemblyReference.cache
@@ -41,3 +35,10 @@ C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.csproj.GenerateResource
 C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.dll
 C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.pdb
+C:\Users\pc\source\repos\SBES\Common\bin\Debug\Common.dll
+C:\Users\pc\source\repos\SBES\Common\bin\Debug\Common.pdb
+C:\Users\pc\source\repos\SBES\Common\obj\Debug\Common.RolesConfigFile.resources
+C:\Users\pc\source\repos\SBES\Common\obj\Debug\Common.csproj.GenerateResource.cache
+C:\Users\pc\source\repos\SBES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\SBES\Common\obj\Debug\Common.dll
+C:\Users\pc\source\repos\SBES\Common\obj\Debug\Common.pdb

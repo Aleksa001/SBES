@@ -10,7 +10,7 @@ namespace Common.RBAC
     public class RolesConfig
     {
 
-        static string path = @"~\..\..\..\..\SecurityManager\RolesConfigFile.resx";
+        static string path = @"~\..\..\..\..\Common\RolesConfigFile.resx";
         public static bool GetPermissions(string rolename, out string[] permissions)
         {
             permissions = new string[10];

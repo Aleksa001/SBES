@@ -43,3 +43,11 @@ C:\Users\pc\Source\Repos\SBES\Common\obj\Debug\Common.dll
 C:\Users\pc\Source\Repos\SBES\Common\obj\Debug\Common.pdb
 D:\PROJECTS\SBES\Common\obj\Debug\Common.RolesConfigFile.resources
 D:\PROJECTS\SBES\Common\obj\Debug\Common.csproj.GenerateResource.cache
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Common\bin\Debug\Common.dll
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Common\bin\Debug\Common.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Common\obj\Debug\Common.RolesConfigFile.resources
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Common\obj\Debug\Common.csproj.GenerateResource.cache
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Common\obj\Debug\Common.dll
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Common\obj\Debug\Common.pdb

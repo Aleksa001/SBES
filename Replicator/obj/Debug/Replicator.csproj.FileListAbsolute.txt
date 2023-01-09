@@ -48,3 +48,13 @@ C:\Users\pc\Source\Repos\SBES\Replicator\obj\Debug\Replicator.csproj.CoreCompile
 C:\Users\pc\Source\Repos\SBES\Replicator\obj\Debug\Replicator.csproj.CopyComplete
 C:\Users\pc\Source\Repos\SBES\Replicator\obj\Debug\Replicator.exe
 C:\Users\pc\Source\Repos\SBES\Replicator\obj\Debug\Replicator.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Replicator\bin\Debug\Replicator.exe.config
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Replicator\bin\Debug\Replicator.exe
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Replicator\bin\Debug\Replicator.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Replicator\bin\Debug\Common.dll
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Replicator\bin\Debug\Common.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Replicator\obj\Debug\Replicator.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Replicator\obj\Debug\Replicator.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Replicator\obj\Debug\Replicator.csproj.CopyComplete
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Replicator\obj\Debug\Replicator.exe
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Replicator\obj\Debug\Replicator.pdb

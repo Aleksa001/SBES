@@ -17,7 +17,6 @@ C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Common\
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Common\obj\Debug\Common.pdb
 D:\PROJECTS\SBES\Common\bin\Debug\Common.dll
 D:\PROJECTS\SBES\Common\bin\Debug\Common.pdb
-D:\PROJECTS\SBES\Common\obj\Debug\Common.csproj.AssemblyReference.cache
 D:\PROJECTS\SBES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 D:\PROJECTS\SBES\Common\obj\Debug\Common.dll
 D:\PROJECTS\SBES\Common\obj\Debug\Common.pdb
@@ -42,3 +41,5 @@ C:\Users\pc\Source\Repos\SBES\Common\obj\Debug\Common.csproj.GenerateResource.ca
 C:\Users\pc\Source\Repos\SBES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\pc\Source\Repos\SBES\Common\obj\Debug\Common.dll
 C:\Users\pc\Source\Repos\SBES\Common\obj\Debug\Common.pdb
+D:\PROJECTS\SBES\Common\obj\Debug\Common.RolesConfigFile.resources
+D:\PROJECTS\SBES\Common\obj\Debug\Common.csproj.GenerateResource.cache

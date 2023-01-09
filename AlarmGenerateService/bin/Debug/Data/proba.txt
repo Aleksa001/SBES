@@ -1,50 +1,20 @@
-Vreme generisanja alarma 4.1.2023. 15:03:09
-Ime klijenta  proba
-Poruka  probica
-Rizik  Low
-------------------------------------
-Vreme generisanja alarma 4.1.2023. 15:03:09
-Ime klijenta  proba
-Poruka  probica2
-Rizik  Low
-------------------------------------
-Vreme generisanja alarma 4.1.2023. 18:50:51
-Ime klijenta  proba
-Poruka  probica
-Rizik  Low
-------------------------------------
-Vreme generisanja alarma 4.1.2023. 18:50:51
-Ime klijenta  proba
-Poruka  probica2
-Rizik  Low
-------------------------------------
-Vreme generisanja alarma 5.1.2023. 18:29:24
-Ime klijenta  proba
-Poruka  probica
-Rizik  Low
-------------------------------------
-Vreme generisanja alarma 5.1.2023. 18:29:24
-Ime klijenta  proba
-Poruka  probica2
-Rizik  Low
-------------------------------------
-Vreme generisanja alarma 5.1.2023. 19:20:02
+Vreme generisanja alarma 1/9/2023 6:28:21 PM
 Ime klijenta  wcfclient
 Poruka  probica
 Rizik  Low
 ------------------------------------
-Vreme generisanja alarma 5.1.2023. 19:20:02
+Vreme generisanja alarma 1/9/2023 6:28:21 PM
 Ime klijenta  wcfclient
 Poruka  probica2
 Rizik  Low
 ------------------------------------
-Vreme generisanja alarma 5.1.2023. 19:40:51
-Ime klijenta  wcfservice
+Vreme generisanja alarma 1/9/2023 6:29:42 PM
+Ime klijenta  wcfclient
 Poruka  probica
 Rizik  Low
 ------------------------------------
-Vreme generisanja alarma 5.1.2023. 19:40:51
-Ime klijenta  wcfservice
+Vreme generisanja alarma 1/9/2023 6:29:42 PM
+Ime klijenta  wcfclient
 Poruka  probica2
 Rizik  Low
 ------------------------------------

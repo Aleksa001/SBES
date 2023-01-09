@@ -1,8 +1,12 @@
 ﻿using AlarmGenerateService;
 using Common;
+using Common.RBAC;
+using Manager;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Security.Principal;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +24,12 @@ namespace Client
 
         public ClientProxy(NetTcpBinding binding, EndpointAddress address) : base(binding, address)
         {
+            string cltCertCN = Formater.ParseName(WindowsIdentity.GetCurrent().Name);
+            this.Credentials.ServiceCertificate.Authentication.CertificateValidationMode = System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust;
+            this.Credentials.ServiceCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;
+
+            this.Credentials.ClientCertificate.Certificate = CertManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, cltCertCN);
+
             factory = this.CreateChannel();
             //Credentials.Windows.AllowNtlm = false;
         }
@@ -41,10 +51,10 @@ namespace Client
             {
                 Console.WriteLine("Error while trying to Read : {0}", e.Detail.Message);
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
-                throw;
+                Console.WriteLine(e.Message);
             }
             
               

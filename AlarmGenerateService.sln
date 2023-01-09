@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Replicator", "Replicator\Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlarmGenerateService2", "AlarmGenerateService2\AlarmGenerateService2.csproj", "{B2879646-39ED-4EE1-A109-A6FB6C56F9EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager", "Manager\Manager.csproj", "{A5251C6F-5754-489E-91CE-74301207AF72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B2879646-39ED-4EE1-A109-A6FB6C56F9EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2879646-39ED-4EE1-A109-A6FB6C56F9EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2879646-39ED-4EE1-A109-A6FB6C56F9EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5251C6F-5754-489E-91CE-74301207AF72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5251C6F-5754-489E-91CE-74301207AF72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5251C6F-5754-489E-91CE-74301207AF72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5251C6F-5754-489E-91CE-74301207AF72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

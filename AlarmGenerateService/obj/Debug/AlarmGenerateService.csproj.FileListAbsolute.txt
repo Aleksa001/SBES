@@ -68,3 +68,6 @@ C:\Users\pc\Source\Repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateServic
 C:\Users\pc\Source\Repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.CopyComplete
 C:\Users\pc\Source\Repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.exe
 C:\Users\pc\Source\Repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.pdb
+D:\PROJECTS\SBES\AlarmGenerateService\bin\Debug\Manager.exe
+D:\PROJECTS\SBES\AlarmGenerateService\bin\Debug\Manager.pdb
+D:\PROJECTS\SBES\AlarmGenerateService\bin\Debug\Manager.exe.config

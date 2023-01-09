@@ -14,8 +14,9 @@ namespace AlarmGenerateService2
 	{
 		static void Main(string[] args)
 		{
-            NetTcpBinding binding = new NetTcpBinding();
             string address = "net.tcp://localhost:9998/Service";
+
+            NetTcpBinding binding = new NetTcpBinding();
 
             binding.Security.Mode = SecurityMode.Transport;
             binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows;

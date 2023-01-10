@@ -61,16 +61,19 @@ namespace AlarmGenerateService
            EndpointAddress endpointAddress = new EndpointAddress(new Uri("net.tcp://localhost:9997/Replicator"),
               EndpointIdentity.CreateUpnIdentity("proba2"));
 
-			while (true) { 
+		
             using(ServerProxy proxy = new ServerProxy(binding, endpointAddress))
             {
-                List<Alarm> alarmi = Service.buffer;
-                    if (alarmi.Count != 0)
+				while (true) { 
+                    
+                    if (Service.cnt == 5)
                     {
-                        proxy.Receive(alarmi);
-                        break;
+                       
+                        proxy.Receive(Service.buffer2.ToList());
+                        Service.cnt = 0;
+                      
                     }
-            }
+                }
             }
 
 

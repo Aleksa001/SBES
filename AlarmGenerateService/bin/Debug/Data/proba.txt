@@ -1,20 +1,550 @@
-Vreme generisanja alarma 1/9/2023 6:28:21 PM
-Ime klijenta  wcfclient
-Poruka  probica
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
 Rizik  Low
 ------------------------------------
-Vreme generisanja alarma 1/9/2023 6:28:21 PM
-Ime klijenta  wcfclient
-Poruka  probica2
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
 Rizik  Low
 ------------------------------------
-Vreme generisanja alarma 1/9/2023 6:29:42 PM
-Ime klijenta  wcfclient
-Poruka  probica
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
 Rizik  Low
 ------------------------------------
-Vreme generisanja alarma 1/9/2023 6:29:42 PM
-Ime klijenta  wcfclient
-Poruka  probica2
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
 Rizik  Low
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Rizik nizak.
+Rizik  Low
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Veoma visok rizik
+Rizik  High
+------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  User
+Poruka  Pripazite, rizik raste
+Rizik  Medium
 ------------------------------------

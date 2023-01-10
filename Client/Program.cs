@@ -30,25 +30,59 @@ namespace Client
             binding.Security.Transport.ProtectionLevel = System.Net.Security.ProtectionLevel.EncryptAndSign;
 
             Console.WriteLine("Korisnik koji je pokrenuo klijenta je : " + Formater.ParseName(WindowsIdentity.GetCurrent().Name));
-            EndpointAddress endpointAddress = new EndpointAddress(new Uri(address), 
-                //EndpointIdentity.CreateUpnIdentity("proba"), --> ZBOG OVOGA BACA ERROR
-                new X509CertificateEndpointIdentity(srvCert));
+            EndpointAddress endpointAddress = new EndpointAddress(new Uri(address),
+                EndpointIdentity.CreateUpnIdentity("proba"));
+              //  new X509CertificateEndpointIdentity(srvCert));
 
-            Alarm a = new Alarm();
-            Alarm a2 = new Alarm();
+           
             
             using (ClientProxy proxy = new ClientProxy(binding, endpointAddress))
             {
+                while (true)
+                {
+                    int choice = 0;
+                    Console.WriteLine("Options:");
+                    Console.WriteLine("1. Prikaz trenutnog stanja u bazi. ");
+                    Console.WriteLine("2. Kreiranje novog alarma. ");
+                    Console.WriteLine("3. Brisanje svih postojecih alarma. ");
+                    Console.WriteLine("4. Brisanje personalizovanih alarma. ");
+                    try
+                    {
+                        choice = Convert.ToInt32(Console.ReadLine());
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e.Message);
+                    }
+                    switch (choice)
+                    {
+                        case 1:
+                            // code block
+                            proxy.CurrentStateOfBase();
+                            break;
+                        case 2:
+                            // code block
+                            Alarm a = new Alarm();
+                            a.TypeOfRisk = a.CalculateRisk();
+                            if (a.TypeOfRisk.ToString().Equals("Low"))
+                                a.Message = "Rizik nizak.";
+                            else if (a.TypeOfRisk.ToString().Equals("Medium"))
+                                a.Message = "Pripazite, rizik raste";
+                            else
+                                a.Message = "Veoma visok rizik";
+                            proxy.CreateNew(a);
 
-                a.TimeOfGenerete = DateTime.Now;
-                a.Message = "probica";
-                proxy.CreateNew(a);
-                a2.TimeOfGenerete = DateTime.Now;
-                a2.Message = "probica2";
-                proxy.CreateNew(a2);
-                //proxy.DeleteAll();
-                proxy.CurrentStateOfBase();
-                
+                            break;
+                        case 3:
+                            proxy.DeleteAll();
+                            break;
+                        case 4:
+                            proxy.DeleteForClient();
+                            break;
+
+                    }
+
+                }
             }
 
             Console.ReadLine();

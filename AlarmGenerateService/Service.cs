@@ -14,7 +14,9 @@ namespace AlarmGenerateService
     public class Service : IService
     {
         public static List<Alarm> buffer = new List<Alarm>();
+        public static Alarm[] buffer2 = new Alarm[5];
         public static CustomAuthorizationManager princ = new CustomAuthorizationManager();
+        public static int cnt = 0;
         public void CreateNew(Alarm a)
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
@@ -30,9 +32,12 @@ namespace AlarmGenerateService
                     a.NameOfClient = Formater.ParseName(windowsIdentity.Name);
                     Console.WriteLine($"Hello,{a.NameOfClient}");
                     Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}\n\tDate:{a.TimeOfGenerete}");
-                    string message = $"Alarm:\n\tMessage:{a.Message}.\n\tClient:{a.NameOfClient}.\n\tDate:{a.TimeOfGenerete}.";
+
                     buffer.Add(a);
-                    Console.WriteLine(buffer.Count);
+                    buffer2[cnt] = a;
+                    cnt++;
+                    
+                    Console.WriteLine(cnt.ToString());
                     WriteInFile(a);
                 } else
                 {

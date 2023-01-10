@@ -32,5 +32,17 @@ namespace AlarmGenerateService
         public string Message { get => message; set => message = value; }
         [DataMember]
         public TypeOfRisk TypeOfRisk { get => typeOfRisk; set => typeOfRisk = value; }
+
+        public TypeOfRisk CalculateRisk()
+        {
+            Random random = new Random();
+            int num = random.Next(50);
+            if (num < 10)
+                return TypeOfRisk.Low;
+            else if (num >= 10 && num < 40)
+                return TypeOfRisk.Medium;
+            else
+                return TypeOfRisk.High;
+        }
     }
 }

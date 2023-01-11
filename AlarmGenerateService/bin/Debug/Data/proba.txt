@@ -548,3 +548,8 @@ Ime klijenta  User
 Poruka  Pripazite, rizik raste
 Rizik  Medium
 ------------------------------------
+Vreme generisanja alarma 1/1/0001 12:00:00 AM
+Ime klijenta  wcfclient
+Poruka  Pripazite, rizik raste
+Rizik  Medium
+------------------------------------

@@ -18,11 +18,11 @@ namespace Client
     {
         static void Main(string[] args)
         {
-            string srvCertCN = "wcfservice";
-            X509Certificate2 srvCert = CertManager.GetCertificateFromStorage(StoreName.TrustedPeople, StoreLocation.LocalMachine, srvCertCN);
+           // string srvCertCN = "wcfservice";
+           // X509Certificate2 srvCert = CertManager.GetCertificateFromStorage(StoreName.TrustedPeople, StoreLocation.LocalMachine, srvCertCN);
 
             NetTcpBinding binding = new NetTcpBinding();
-            binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
+          //  binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
             string address = "net.tcp://localhost:9999/Service";
 
             binding.Security.Mode = SecurityMode.Transport;
@@ -30,8 +30,7 @@ namespace Client
             binding.Security.Transport.ProtectionLevel = System.Net.Security.ProtectionLevel.EncryptAndSign;
 
             Console.WriteLine("Korisnik koji je pokrenuo klijenta je : " + Formater.ParseName(WindowsIdentity.GetCurrent().Name));
-            EndpointAddress endpointAddress = new EndpointAddress(new Uri(address),
-                EndpointIdentity.CreateUpnIdentity("proba"));
+            EndpointAddress endpointAddress = new EndpointAddress(new Uri(address));
               //  new X509CertificateEndpointIdentity(srvCert));
 
            

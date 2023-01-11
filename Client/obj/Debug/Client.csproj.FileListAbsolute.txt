@@ -58,19 +58,6 @@ C:\Users\pc\Source\Repos\SBES\Client\obj\Debug\Client.csproj.CoreCompileInputs.c
 C:\Users\pc\Source\Repos\SBES\Client\obj\Debug\Client.csproj.CopyComplete
 C:\Users\pc\Source\Repos\SBES\Client\obj\Debug\Client.exe
 C:\Users\pc\Source\Repos\SBES\Client\obj\Debug\Client.pdb
-D:\PROJECTS\SBES\Client\bin\Debug\Client.exe.config
-D:\PROJECTS\SBES\Client\bin\Debug\Client.exe
-D:\PROJECTS\SBES\Client\bin\Debug\Client.pdb
-D:\PROJECTS\SBES\Client\bin\Debug\Common.dll
-D:\PROJECTS\SBES\Client\bin\Debug\Manager.exe
-D:\PROJECTS\SBES\Client\bin\Debug\Common.pdb
-D:\PROJECTS\SBES\Client\bin\Debug\Manager.pdb
-D:\PROJECTS\SBES\Client\bin\Debug\Manager.exe.config
-D:\PROJECTS\SBES\Client\obj\Debug\Client.csproj.AssemblyReference.cache
-D:\PROJECTS\SBES\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
-D:\PROJECTS\SBES\Client\obj\Debug\Client.csproj.CopyComplete
-D:\PROJECTS\SBES\Client\obj\Debug\Client.exe
-D:\PROJECTS\SBES\Client\obj\Debug\Client.pdb
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Client\bin\Debug\Client.exe.config
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Client\bin\Debug\Client.exe
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Client\bin\Debug\Client.pdb
@@ -84,3 +71,16 @@ C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Client\o
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Client\obj\Debug\Client.csproj.CopyComplete
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Client\obj\Debug\Client.exe
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Client\obj\Debug\Client.pdb
+D:\PROJECTS\SBES\Client\bin\Debug\Client.exe.config
+D:\PROJECTS\SBES\Client\bin\Debug\Client.exe
+D:\PROJECTS\SBES\Client\bin\Debug\Client.pdb
+D:\PROJECTS\SBES\Client\bin\Debug\Common.dll
+D:\PROJECTS\SBES\Client\bin\Debug\Manager.exe
+D:\PROJECTS\SBES\Client\bin\Debug\Common.pdb
+D:\PROJECTS\SBES\Client\bin\Debug\Manager.pdb
+D:\PROJECTS\SBES\Client\bin\Debug\Manager.exe.config
+D:\PROJECTS\SBES\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+D:\PROJECTS\SBES\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\PROJECTS\SBES\Client\obj\Debug\Client.csproj.CopyComplete
+D:\PROJECTS\SBES\Client\obj\Debug\Client.exe
+D:\PROJECTS\SBES\Client\obj\Debug\Client.pdb

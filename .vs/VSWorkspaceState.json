@@ -1,12 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\AlarmGenerateService",
-    "\\Client",
-    "\\Common",
-    "\\Common\\RBAC",
-    "\\Replicator"
+    ""
   ],
-  "SelectedNode": "\\Common\\RBAC",
+  "SelectedNode": "\\AlarmGenerateService.sln",
   "PreviewInSolutionExplorer": false
 }

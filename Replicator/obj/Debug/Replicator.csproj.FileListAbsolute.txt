@@ -8,16 +8,6 @@ C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Replica
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Replicator\obj\Debug\Replicator.csproj.CopyComplete
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Replicator\obj\Debug\Replicator.exe
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\sbes\SBES\Replicator\obj\Debug\Replicator.pdb
-D:\PROJECTS\SBES\Replicator\bin\Debug\Replicator.exe.config
-D:\PROJECTS\SBES\Replicator\bin\Debug\Replicator.exe
-D:\PROJECTS\SBES\Replicator\bin\Debug\Replicator.pdb
-D:\PROJECTS\SBES\Replicator\bin\Debug\Common.dll
-D:\PROJECTS\SBES\Replicator\bin\Debug\Common.pdb
-D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.csproj.AssemblyReference.cache
-D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.csproj.CoreCompileInputs.cache
-D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.csproj.CopyComplete
-D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.exe
-D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.pdb
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Replicator\bin\Debug\Replicator.exe.config
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Replicator\bin\Debug\Replicator.exe
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Replicator\bin\Debug\Replicator.pdb
@@ -58,3 +48,16 @@ C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Replicat
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Replicator\obj\Debug\Replicator.csproj.CopyComplete
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Replicator\obj\Debug\Replicator.exe
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\projSBES\Replicator\obj\Debug\Replicator.pdb
+D:\PROJECTS\SBES\Replicator\bin\Debug\Replicator.exe.config
+D:\PROJECTS\SBES\Replicator\bin\Debug\Replicator.exe
+D:\PROJECTS\SBES\Replicator\bin\Debug\Replicator.pdb
+D:\PROJECTS\SBES\Replicator\bin\Debug\Common.dll
+D:\PROJECTS\SBES\Replicator\bin\Debug\Manager.exe
+D:\PROJECTS\SBES\Replicator\bin\Debug\Common.pdb
+D:\PROJECTS\SBES\Replicator\bin\Debug\Manager.pdb
+D:\PROJECTS\SBES\Replicator\bin\Debug\Manager.exe.config
+D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.csproj.AssemblyReference.cache
+D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.csproj.CoreCompileInputs.cache
+D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.csproj.CopyComplete
+D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.exe
+D:\PROJECTS\SBES\Replicator\obj\Debug\Replicator.pdb

@@ -24,11 +24,11 @@ namespace Client
 
         public ClientProxy(NetTcpBinding binding, EndpointAddress address) : base(binding, address)
         {
-            string cltCertCN = Formater.ParseName(WindowsIdentity.GetCurrent().Name);
-            this.Credentials.ServiceCertificate.Authentication.CertificateValidationMode = System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust;
-            this.Credentials.ServiceCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;
+            //string cltCertCN = Formater.ParseName(WindowsIdentity.GetCurrent().Name);
+            //this.Credentials.ServiceCertificate.Authentication.CertificateValidationMode = System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust;
+            //this.Credentials.ServiceCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;
 
-            this.Credentials.ClientCertificate.Certificate = CertManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, cltCertCN);
+            //this.Credentials.ClientCertificate.Certificate = CertManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, cltCertCN);
 
             factory = this.CreateChannel();
             //Credentials.Windows.AllowNtlm = false;

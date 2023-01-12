@@ -17,7 +17,7 @@ namespace AlarmGenerateService2
 			{
 				Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}\n\tDate:{a.TimeOfGenerete}");
 				Console.WriteLine("\n-----------------------------------------------------------------------------------------\n");
-				string message = $"Alarm:\n\tMessage:{a.Message}.\n\tClient:{a.NameOfClient}.\n\tDate:{a.TimeOfGenerete}.";
+				string message = $"Alarm:\n\tMessage:{a.Message}.\n\tClient:{a.NameOfClient}.\n\tDate:{a.TimeOfGenerete}\n\tRisk:{a.TypeOfRisk}.";
 				WriteInFile(message);
                
 				//WriteInFile(a.Message);

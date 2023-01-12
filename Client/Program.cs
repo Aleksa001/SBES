@@ -69,6 +69,7 @@ namespace Client
                                 a.Message = "Pripazite, rizik raste";
                             else
                                 a.Message = "Veoma visok rizik";
+                            a.TimeOfGenerete = DateTime.Now;
                             proxy.CreateNew(a);
 
                             break;

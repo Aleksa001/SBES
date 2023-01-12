@@ -21,14 +21,6 @@ C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Common\obj\D
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Common\obj\Debug\Common.dll
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Common\obj\Debug\Common.pdb
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\Faks\SBES\Common\obj\Debug\Common.csproj.AssemblyReference.cache
-C:\Users\Admin\source\repos\SBES\Common\bin\Debug\Common.dll
-C:\Users\Admin\source\repos\SBES\Common\bin\Debug\Common.pdb
-C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.csproj.AssemblyReference.cache
-C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.RolesConfigFile.resources
-C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.csproj.GenerateResource.cache
-C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
-C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.dll
-C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.pdb
 C:\Users\pc\Source\Repos\SBES\Common\bin\Debug\Common.dll
 C:\Users\pc\Source\Repos\SBES\Common\bin\Debug\Common.pdb
 C:\Users\pc\Source\Repos\SBES\Common\obj\Debug\Common.RolesConfigFile.resources
@@ -52,3 +44,11 @@ D:\PROJECTS\SBES\Common\obj\Debug\Common.csproj.GenerateResource.cache
 D:\PROJECTS\SBES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 D:\PROJECTS\SBES\Common\obj\Debug\Common.dll
 D:\PROJECTS\SBES\Common\obj\Debug\Common.pdb
+C:\Users\Admin\source\repos\SBES\Common\bin\Debug\Common.dll
+C:\Users\Admin\source\repos\SBES\Common\bin\Debug\Common.pdb
+C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.Logger.AuditEventFile.resources
+C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.RolesConfigFile.resources
+C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.dll
+C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.pdb

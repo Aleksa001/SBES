@@ -31,7 +31,7 @@ namespace AlarmGenerateService
                     WindowsIdentity windowsIdentity = identity as WindowsIdentity;
                     a.NameOfClient = Formater.ParseName(windowsIdentity.Name);
                     Console.WriteLine($"Hello,{a.NameOfClient}");
-                    Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}\n\tDate:{a.TimeOfGenerete}");
+                    Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}.\n\tDate:{a.TimeOfGenerete}");
 
                     buffer.Add(a);
                     buffer2[cnt] = a;
@@ -115,12 +115,20 @@ namespace AlarmGenerateService
 
         public void DeleteForClient()
         {
-            IIdentity identity = Thread.CurrentPrincipal.Identity;
-            WindowsIdentity windowsIdentity = identity as WindowsIdentity;
+            CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
+            string userName = Formater.ParseName(principal.Identity.Name);
 
-            List<string> lst = File.ReadAllLines(path).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
-            lst.RemoveAll(x => x.Split(':')[2].Equals(windowsIdentity.Name));
-            File.WriteAllLines(path, lst);
+            if (Thread.CurrentPrincipal.IsInRole("AlarmAdmin"))
+            {
+                IIdentity identity = Thread.CurrentPrincipal.Identity;
+                WindowsIdentity windowsIdentity = identity as WindowsIdentity;
+
+                List<string> lst = File.ReadAllLines(path).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
+                lst.RemoveAll(x => x.Split(':')[3].Split('.')[0].Equals(windowsIdentity.Name));
+                File.WriteAllLines(path, lst);
+
+                Console.WriteLine("Delete for client successfully executed");
+            }
         }
 
 

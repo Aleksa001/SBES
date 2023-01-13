@@ -1,4 +1,5 @@
 ﻿using AlarmGenerateService;
+using Common.Logger;
 using Manager;
 using System;
 using System.Collections.Generic;
@@ -27,8 +28,17 @@ namespace Replicator
 
 			using (ReplicatorProxy proxy = new ReplicatorProxy(binding, endpointAddress))
 			{
+				try
+				{
+					Audit.ReplicationSuccess();
+					proxy.Receive(a);
 
-				proxy.Receive(a);
+				}
+				catch (Exception e)
+				{
+					Audit.ReplicationFailed();
+					Console.WriteLine(e.Message);
+				}
 			}
 		}
 		

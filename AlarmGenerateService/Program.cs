@@ -1,4 +1,5 @@
 ﻿using Common;
+using Common.Logger;
 using Common.RBAC;
 using Manager;
 using System;
@@ -62,9 +63,19 @@ namespace AlarmGenerateService
                     
                     if (Service.cnt == 5)
                     {
+                        try
+                        {
+                            Audit.ReplicationInitiated();
+                            proxy.Receive(Service.buffer2.ToList());
+                            Service.cnt = 0;
+
+                        }
+                        catch (Exception e)
+                        {
+                            Audit.ReplicationFailed();
+                            Console.WriteLine(e.Message);
+                        }
                        
-                        proxy.Receive(Service.buffer2.ToList());
-                        Service.cnt = 0;
                       
                     }
                 }

@@ -63,6 +63,7 @@
     <Compile Include="RBAC\CustomAuthorizationPolicy.cs" />
     <Compile Include="RBAC\CustomPrincipal.cs" />
     <Compile Include="RBAC\Formater.cs" />
+    <Compile Include="RBAC\FormaterCer.cs" />
     <Compile Include="RBAC\RolesConfig.cs" />
     <Compile Include="RolesConfigFile.Designer.cs">
       <AutoGen>True</AutoGen>

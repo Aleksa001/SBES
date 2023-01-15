@@ -23,19 +23,29 @@ namespace AlarmGenerateService
 
 		public ServerProxy(NetTcpBinding binding, EndpointAddress address) : base(binding, address)
 		{
-			string cltCertCN = Formater.ParseName(WindowsIdentity.GetCurrent().Name);
+			string cltCertCN = FormaterCer.ParseNameForCert(WindowsIdentity.GetCurrent().Name);
+            //Console.WriteLine($"Klijent cer {cltCertCN}\n");
 			this.Credentials.ServiceCertificate.Authentication.CertificateValidationMode = System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust;
 			this.Credentials.ServiceCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;
 
 			this.Credentials.ClientCertificate.Certificate = CertManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, cltCertCN);
-
+            
 			factory = this.CreateChannel();
 			//Credentials.Windows.AllowNtlm = false;
 		}
 
 		public void Receive(List<Alarm> a)
 		{
-			factory.Receive(a);
+            try
+            {
+				factory.Receive(a);
+            }
+            catch (Exception e)
+            {
+
+                Console.WriteLine(e);
+            }
+			
 		}
 	}
 }

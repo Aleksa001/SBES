@@ -24,7 +24,7 @@ namespace Replicator
 
 		public ReplicatorProxy(NetTcpBinding binding, EndpointAddress address) : base(binding, address)
 		{
-			string cltCertCN = Formater.ParseName(WindowsIdentity.GetCurrent().Name);
+			string cltCertCN = FormaterCer.ParseNameForCert(WindowsIdentity.GetCurrent().Name);
 			this.Credentials.ServiceCertificate.Authentication.CertificateValidationMode = System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust;
 			this.Credentials.ServiceCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;
 

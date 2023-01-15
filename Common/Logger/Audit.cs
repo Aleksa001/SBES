@@ -11,7 +11,7 @@ namespace Common.Logger
     {
 
         private static EventLog customLog = null;
-        const string SourceName = "Common.Logger.Audit";
+        const string SourceName = "SecurityManager.Audit";
         const string LogName = "MySecTest";
 
         static Audit()

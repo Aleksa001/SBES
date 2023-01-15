@@ -36,8 +36,11 @@ namespace AlarmGenerateService
                     buffer.Add(a);
                     buffer2[cnt] = a;
                     cnt++;
-                    
+                  
                     Console.WriteLine(cnt.ToString());
+                    //Console.WriteLine($"Duzina niza buffer2 je:{buffer2.Count()}\n");
+
+
                     WriteInFile(a);
                 } else
                 {
@@ -97,7 +100,15 @@ namespace AlarmGenerateService
                 
                         Console.WriteLine("Delete All successfully executed");
                         File.Create(path).Close();
-                } 
+                }
+                else
+                {
+                    string name = Thread.CurrentPrincipal.Identity.Name;
+                    DateTime time = DateTime.Now;
+                    string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
+                        "For this method need to be member of group Reader.", name, time.TimeOfDay);
+                    throw new FaultException<SecurityException>(new SecurityException(message));
+                }
 
             }
             catch (Exception)
@@ -118,16 +129,35 @@ namespace AlarmGenerateService
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
             string userName = Formater.ParseName(principal.Identity.Name);
 
-            if (Thread.CurrentPrincipal.IsInRole("AlarmAdmin"))
+          
+            try
             {
-                IIdentity identity = Thread.CurrentPrincipal.Identity;
-                WindowsIdentity windowsIdentity = identity as WindowsIdentity;
+                 if (Thread.CurrentPrincipal.IsInRole("AlarmAdmin"))
+                 {
+                    IIdentity identity = Thread.CurrentPrincipal.Identity;
+                    WindowsIdentity windowsIdentity = identity as WindowsIdentity;
+                    string uName = Formater.ParseName(windowsIdentity.Name);
+                    List<string> lst = File.ReadAllLines(path).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
+                    
+                    lst.RemoveAll(x => x.Contains(uName));
+                    File.WriteAllLines(path, lst);
 
-                List<string> lst = File.ReadAllLines(path).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
-                lst.RemoveAll(x => x.Split(':')[3].Split('.')[0].Equals(windowsIdentity.Name));
-                File.WriteAllLines(path, lst);
+                    Console.WriteLine("Delete for client successfully executed");
+                 }
+                else
+                {
+                    string name = Thread.CurrentPrincipal.Identity.Name;
+                    DateTime time = DateTime.Now;
+                    string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
+                        "For this method need to be member of group Reader.", name, time.TimeOfDay);
+                    throw new FaultException<SecurityException>(new SecurityException(message));
+                }
 
-                Console.WriteLine("Delete for client successfully executed");
+            }
+            catch (Exception)
+            {
+
+              
             }
         }
 
@@ -141,10 +171,10 @@ namespace AlarmGenerateService
 
             using (StreamWriter sw = new StreamWriter(path, true))
             {
-                sw.WriteLine("Vreme generisanja alarma " + a.TimeOfGenerete.ToString(), true);
-                sw.WriteLine("Ime klijenta  " + a.NameOfClient, true);
-                sw.WriteLine("Poruka  " + a.Message, true);
-                sw.WriteLine("Rizik  " + a.TypeOfRisk.ToString(), true);
+                sw.WriteLine(";Vreme generisanja alarma " + a.TimeOfGenerete.ToString(), true);
+                sw.WriteLine("Ime klijenta:  " + a.NameOfClient , true);
+                sw.WriteLine("Poruka:  " + a.Message, true);
+                sw.WriteLine("Rizik:  " + a.TypeOfRisk.ToString()+";", true);
                 sw.WriteLine("------------------------------------", true);
             }
 

@@ -17,7 +17,7 @@ namespace Replicator
 	{
 		static void Main(string[] args)
 		{
-			string srvCertCN = Formater.ParseName(WindowsIdentity.GetCurrent().Name);
+			string srvCertCN = FormaterCer.ParseNameForCert(WindowsIdentity.GetCurrent().Name);
 			string address = "net.tcp://localhost:9997/Replicator";
 			
 			NetTcpBinding binding = new NetTcpBinding();
@@ -25,6 +25,9 @@ namespace Replicator
 			//binding.Security.Mode = SecurityMode.Transport;
 			//binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows;
 			//binding.Security.Transport.ProtectionLevel = System.Net.Security.ProtectionLevel.EncryptAndSign;
+
+
+			//ovde umesto FirstReplicator da se napise Replicator
 
 			ServiceHost host = new ServiceHost(typeof(FirstReplicator));
 			host.AddServiceEndpoint(typeof(IReplicator), binding, address);
@@ -45,7 +48,7 @@ namespace Replicator
             host.Open();
 
 
-			Console.WriteLine("Servis je pokrenut.");
+			Console.WriteLine("Replikator je pokrenut.");
 
 
 			Console.ReadLine();

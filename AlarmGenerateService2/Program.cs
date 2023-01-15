@@ -17,7 +17,7 @@ namespace AlarmGenerateService2
 	{
 		static void Main(string[] args)
 		{
-            string srvCertCN = Formater.ParseName(WindowsIdentity.GetCurrent().Name);
+            string srvCertCN = FormaterCer.ParseNameForCert(WindowsIdentity.GetCurrent().Name);
             string address = "net.tcp://localhost:9998/Service";
 
             NetTcpBinding binding = new NetTcpBinding();
@@ -47,7 +47,7 @@ namespace AlarmGenerateService2
 
             Console.WriteLine("Korisnik koji je pokrenuo servera :" + Formater.ParseName(WindowsIdentity.GetCurrent().Name));
 
-            Console.WriteLine("Servis je pokrenut.");
+            Console.WriteLine("Sekundarni servis je pokrenut.");
 
             Console.ReadLine();
         }

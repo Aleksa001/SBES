@@ -49,12 +49,13 @@ namespace Client
             }
             catch (FaultException<SecurityException> e)
             {
-                Console.WriteLine("Error while trying to Read : {0}", e.Detail.Message);
+                Console.WriteLine("Korisnik nema pravo pristupa ovoj metodi!\tPotrebna permisija: AlarmGenerator!");
+                //Console.WriteLine("Error while trying to Read : {0}", e.Detail.Message);
             }
             catch (Exception e)
             {
-
-                Console.WriteLine(e.Message);
+                Console.WriteLine("Korisnik nema pravo pristupa ovoj metodi!\tPotrebna permisija: AlarmGenerator!");
+                //Console.WriteLine(e.Message);
             }
             
               
@@ -68,22 +69,55 @@ namespace Client
 			}
             catch (FaultException<SecurityException> e)
             {
+                Console.WriteLine("Korisnik nema pravo pristupa ovoj metodi!");
                 Console.WriteLine("Error while trying to Read : {0}", e.Detail.Message);
             }
             catch (Exception e)
             {
+                Console.WriteLine("Korisnik nema pravo pristupa ovoj metodi!");
                 Console.WriteLine("Error while trying to Read : {0}", e.Message);
             }
         }
 
         public void DeleteAll()
         {
-            factory.DeleteAll();
+            try
+            {
+              
+                factory.DeleteAll();
+
+            }
+            catch (FaultException<SecurityException> e)
+            {
+                Console.WriteLine("Korisnik nema pravo pristupa ovoj metodi!\tPotrebna permisija: AlarmAdmin!");
+                //Console.WriteLine("Error while trying to Read : {0}", e.Detail.Message);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Korisnik nema pravo pristupa ovoj metodi!\tPotrebna permisija: AlarmAdmin!");
+                //Console.WriteLine(e.Message);
+            }
         }
 
         public void DeleteForClient()
         {
-            factory.DeleteForClient();
+           
+            try
+            {
+                factory.DeleteForClient();
+              
+
+            }
+            catch (FaultException<SecurityException> e)
+            {
+                Console.WriteLine("Korisnik nema pravo pristupa ovoj metodi!\tPotrebna permisija: AlarmAdmin!");
+                //Console.WriteLine("Error while trying to Read : {0}", e.Detail.Message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Korisnik nema pravo pristupa ovoj metodi!\tPotrebna permisija: AlarmAdmin!");
+                //Console.WriteLine(e.Message);
+            }
         }
 
         public void WriteInFile(Alarm a)

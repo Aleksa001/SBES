@@ -45,35 +45,42 @@ namespace AlarmGenerateService
 
             Console.WriteLine("Korisnik koji je pokrenuo servera :" + Formater.ParseName(WindowsIdentity.GetCurrent().Name));
 
-            Console.WriteLine("Servis je pokrenut.");
+            Console.WriteLine("Primarni servis je pokrenut.");
             Console.WriteLine("Pokrecem komunicakiju sa Replikatorom.");
 
-            string srvCertCN = "replicator";
+            binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
+            string srvCertCN = "replikator";
             X509Certificate2 srvCert = CertManager.GetCertificateFromStorage(StoreName.TrustedPeople, StoreLocation.LocalMachine, srvCertCN);
 
             // podesavanje binding-a da podrzi autentifikaciju uz pomoc sertifikata
-            binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
+            
+            
 
             EndpointAddress endpointAddress = new EndpointAddress(new Uri("net.tcp://localhost:9997/Replicator"), new X509CertificateEndpointIdentity(srvCert));
 
 		
             using(ServerProxy proxy = new ServerProxy(binding, endpointAddress))
             {
-				while (true) { 
+                //proxy.Credentials.ServiceCertificate.Authentication.CertificateValidationMode = System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust;
+                //proxy.Credentials.ServiceCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;
+                while (true) { 
                     
                     if (Service.cnt == 5)
                     {
+                        Console.WriteLine("BUFFER JE POPUNJEN I SPREMNO JE ZA REPLIKACIJU!!!");
                         try
-                        {
+                        {  
+                            Service.cnt = 0;
                             Audit.ReplicationInitiated();
                             proxy.Receive(Service.buffer2.ToList());
-                            Service.cnt = 0;
+                          
+                            Console.WriteLine($"Trenutna vredonst CNT je {Service.cnt}\n");
 
                         }
                         catch (Exception e)
                         {
                             Audit.ReplicationFailed();
-                            Console.WriteLine(e.Message);
+                            Console.WriteLine(e);
                         }
                        
                       

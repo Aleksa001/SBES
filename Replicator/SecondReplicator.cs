@@ -23,16 +23,17 @@ namespace Replicator
 			//binding.Security.Mode = SecurityMode.Transport;
 			//binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows;
 			//binding.Security.Transport.ProtectionLevel = System.Net.Security.ProtectionLevel.EncryptAndSign;
-
+			
 			EndpointAddress endpointAddress = new EndpointAddress(new Uri("net.tcp://localhost:9998/Service"), new X509CertificateEndpointIdentity(srvCert));
 
 			using (ReplicatorProxy proxy = new ReplicatorProxy(binding, endpointAddress))
 			{
+				
 				try
 				{
-					Audit.ReplicationSuccess();
+					
 					proxy.Receive(a);
-
+					Audit.ReplicationSuccess();
 				}
 				catch (Exception e)
 				{

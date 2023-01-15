@@ -52,3 +52,4 @@ C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.csproj.GenerateResource
 C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.dll
 C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.pdb
+C:\Users\Admin\source\repos\SBES\Common\obj\Debug\Common.csproj.AssemblyReference.cache

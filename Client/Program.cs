@@ -40,7 +40,7 @@ namespace Client
                 while (true)
                 {
                     int choice = 0;
-                    Console.WriteLine("Options:");
+                    Console.WriteLine("\nOptions:");
                     Console.WriteLine("1. Prikaz trenutnog stanja u bazi. ");
                     Console.WriteLine("2. Kreiranje novog alarma. ");
                     Console.WriteLine("3. Brisanje svih postojecih alarma. ");
@@ -57,7 +57,14 @@ namespace Client
                     {
                         case 1:
                             // code block
-                            proxy.CurrentStateOfBase();
+                            List<string> lista = proxy.CurrentStateOfBase();
+                            
+                                foreach (string s in lista)
+                                {
+
+                                    Console.WriteLine(s);
+                                }
+                            
                             break;
                         case 2:
                             // code block
@@ -70,14 +77,32 @@ namespace Client
                             else
                                 a.Message = "Veoma visok rizik";
                             a.TimeOfGenerete = DateTime.Now;
-                            proxy.CreateNew(a);
+							if (proxy.CreateNew(a))
+							{
+                                Console.WriteLine("Uspesno kreiran alarm.");
+                                Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}.\n\tDate:{a.TimeOfGenerete}");
+                            }
 
                             break;
                         case 3:
-                            proxy.DeleteAll();
+							if (proxy.DeleteAll())
+							{
+                                Console.WriteLine("Uspesno ste izbrisali sve iz baze.");
+							}
+							else
+							{
+                                Console.WriteLine("For this method need to be member of group Reader.");
+							}
                             break;
                         case 4:
-                            proxy.DeleteForClient();
+							if (proxy.DeleteForClient())
+							{
+                                Console.WriteLine("Uspesno izbrisan podatak iz baze");
+							}
+							else
+							{
+                                Console.WriteLine("Neuspesno brisanje");
+							}
                             break;
 
                     }

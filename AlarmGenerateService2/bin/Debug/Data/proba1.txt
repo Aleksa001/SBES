@@ -1,0 +1,60 @@
+Alarm:
+	Message:Rizik nizak..
+	Client:User.
+	Date:1/24/2023 8:02:11 PM
+	Risk:Low.
+---------------------------------------------------------------------------
+Alarm:
+	Message:Pripazite, rizik raste.
+	Client:User.
+	Date:1/24/2023 8:02:11 PM
+	Risk:Medium.
+---------------------------------------------------------------------------
+Alarm:
+	Message:Rizik nizak..
+	Client:User.
+	Date:1/24/2023 8:02:12 PM
+	Risk:Low.
+---------------------------------------------------------------------------
+Alarm:
+	Message:Pripazite, rizik raste.
+	Client:User.
+	Date:1/24/2023 8:02:12 PM
+	Risk:Medium.
+---------------------------------------------------------------------------
+Alarm:
+	Message:Rizik nizak..
+	Client:User.
+	Date:1/24/2023 8:02:12 PM
+	Risk:Low.
+---------------------------------------------------------------------------
+Alarm:
+	Message:Pripazite, rizik raste.
+	Client:User.
+	Date:1/24/2023 8:47:33 PM
+	Risk:Medium.
+---------------------------------------------------------------------------
+Alarm:
+	Message:Pripazite, rizik raste.
+	Client:User.
+	Date:1/24/2023 8:47:48 PM
+	Risk:Medium.
+---------------------------------------------------------------------------
+Alarm:
+	Message:Veoma visok rizik.
+	Client:User.
+	Date:1/24/2023 8:47:50 PM
+	Risk:High.
+---------------------------------------------------------------------------
+Alarm:
+	Message:Rizik nizak..
+	Client:User.
+	Date:1/24/2023 8:48:20 PM
+	Risk:Low.
+---------------------------------------------------------------------------
+Alarm:
+	Message:Pripazite, rizik raste.
+	Client:User.
+	Date:1/24/2023 8:48:21 PM
+	Risk:Medium.
+---------------------------------------------------------------------------

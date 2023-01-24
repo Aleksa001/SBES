@@ -20,6 +20,7 @@ namespace AlarmGenerateService
         static void Main(string[] args)
         {
             string address = "net.tcp://localhost:9999/Service";
+           
 
             NetTcpBinding binding = new NetTcpBinding();
 
@@ -48,7 +49,7 @@ namespace AlarmGenerateService
             Console.WriteLine("Primarni servis je pokrenut.");
             Console.WriteLine("Pokrecem komunicakiju sa Replikatorom.");
 
-            binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
+           // binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
             string srvCertCN = "replikator";
             X509Certificate2 srvCert = CertManager.GetCertificateFromStorage(StoreName.TrustedPeople, StoreLocation.LocalMachine, srvCertCN);
 
@@ -56,7 +57,7 @@ namespace AlarmGenerateService
             
             
 
-            EndpointAddress endpointAddress = new EndpointAddress(new Uri("net.tcp://localhost:9997/Replicator"), new X509CertificateEndpointIdentity(srvCert));
+            EndpointAddress endpointAddress = new EndpointAddress(new Uri("net.tcp://localhost:9997/Replicator")/*, new X509CertificateEndpointIdentity(srvCert)*/);
 
 		
             using(ServerProxy proxy = new ServerProxy(binding, endpointAddress))
@@ -71,7 +72,7 @@ namespace AlarmGenerateService
                         try
                         {  
                             Service.cnt = 0;
-                            Audit.ReplicationInitiated();
+                          //  Audit.ReplicationInitiated();
                             proxy.Receive(Service.buffer2.ToList());
                           
                             Console.WriteLine($"Trenutna vredonst CNT je {Service.cnt}\n");
@@ -79,7 +80,7 @@ namespace AlarmGenerateService
                         }
                         catch (Exception e)
                         {
-                            Audit.ReplicationFailed();
+                           // Audit.ReplicationFailed();
                             Console.WriteLine(e);
                         }
                        

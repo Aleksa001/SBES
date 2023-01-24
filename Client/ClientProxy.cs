@@ -15,10 +15,7 @@ namespace Client
 {
     public class ClientProxy : ChannelFactory<IService>, IService, IDisposable
     {
-        public ClientProxy(NetTcpBinding binding, string address): base(binding, address)
-        {
-            factory = this.CreateChannel();
-        }
+        
         IService factory;
 
 
@@ -39,11 +36,11 @@ namespace Client
        
 
 
-        public void  CreateNew(Alarm a)
+        public bool  CreateNew(Alarm a)
         {
             try
             {
-                factory.CreateNew(a);
+                return factory.CreateNew(a);
            
 
             }
@@ -51,21 +48,24 @@ namespace Client
             {
                 Console.WriteLine("Korisnik nema pravo pristupa ovoj metodi!\tPotrebna permisija: AlarmGenerator!");
                 //Console.WriteLine("Error while trying to Read : {0}", e.Detail.Message);
+                return false;
             }
             catch (Exception e)
             {
                 Console.WriteLine("Korisnik nema pravo pristupa ovoj metodi!\tPotrebna permisija: AlarmGenerator!");
+                return false;
                 //Console.WriteLine(e.Message);
             }
             
               
         }
 
-        public void CurrentStateOfBase()
+        public List<string> CurrentStateOfBase()
         {
+            List<string> lista = new List<string>();
             try
             {
-                factory.CurrentStateOfBase();
+              lista = factory.CurrentStateOfBase();
 			}
             catch (FaultException<SecurityException> e)
             {
@@ -77,14 +77,16 @@ namespace Client
                 Console.WriteLine("Korisnik nema pravo pristupa ovoj metodi!");
                 Console.WriteLine("Error while trying to Read : {0}", e.Message);
             }
+            return lista;
         }
 
-        public void DeleteAll()
+        public bool DeleteAll()
         {
             try
             {
               
-                factory.DeleteAll();
+               return factory.DeleteAll();
+                
 
             }
             catch (FaultException<SecurityException> e)
@@ -97,25 +99,28 @@ namespace Client
                 Console.WriteLine("Korisnik nema pravo pristupa ovoj metodi!\tPotrebna permisija: AlarmAdmin!");
                 //Console.WriteLine(e.Message);
             }
+            return false;
         }
 
-        public void DeleteForClient()
+        public bool DeleteForClient()
         {
            
             try
             {
-                factory.DeleteForClient();
+               return factory.DeleteForClient();
               
 
             }
             catch (FaultException<SecurityException> e)
             {
                 Console.WriteLine("Korisnik nema pravo pristupa ovoj metodi!\tPotrebna permisija: AlarmAdmin!");
+                return false;
                 //Console.WriteLine("Error while trying to Read : {0}", e.Detail.Message);
             }
             catch (Exception e)
             {
                 Console.WriteLine("Korisnik nema pravo pristupa ovoj metodi!\tPotrebna permisija: AlarmAdmin!");
+                return false;
                 //Console.WriteLine(e.Message);
             }
         }

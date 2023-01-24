@@ -19,12 +19,12 @@ namespace Replicator
 			X509Certificate2 srvCert = CertManager.GetCertificateFromStorage(StoreName.TrustedPeople, StoreLocation.LocalMachine, srvCertCN);
 
 			NetTcpBinding binding = new NetTcpBinding();
-			binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
-			//binding.Security.Mode = SecurityMode.Transport;
-			//binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows;
-			//binding.Security.Transport.ProtectionLevel = System.Net.Security.ProtectionLevel.EncryptAndSign;
+			//binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
+			binding.Security.Mode = SecurityMode.Transport;
+			binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows;
+			binding.Security.Transport.ProtectionLevel = System.Net.Security.ProtectionLevel.EncryptAndSign;
 			
-			EndpointAddress endpointAddress = new EndpointAddress(new Uri("net.tcp://localhost:9998/Service"), new X509CertificateEndpointIdentity(srvCert));
+			EndpointAddress endpointAddress = new EndpointAddress(new Uri("net.tcp://localhost:9998/Service")/*, new X509CertificateEndpointIdentity(srvCert)*/);
 
 			using (ReplicatorProxy proxy = new ReplicatorProxy(binding, endpointAddress))
 			{

@@ -87,3 +87,16 @@ C:\Users\Admin\source\repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateSer
 C:\Users\Admin\source\repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.CopyComplete
 C:\Users\Admin\source\repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.exe
 C:\Users\Admin\source\repos\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\bin\Debug\AlarmGenerateService.exe.config
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\bin\Debug\AlarmGenerateService.exe
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\bin\Debug\AlarmGenerateService.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\bin\Debug\Common.dll
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\bin\Debug\Manager.exe
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\bin\Debug\Common.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\bin\Debug\Manager.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\bin\Debug\Manager.exe.config
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.CopyComplete
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.exe
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.pdb

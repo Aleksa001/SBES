@@ -13,11 +13,11 @@ namespace AlarmGenerateService
 {
     public class Service : IService
     {
-        public static List<Alarm> buffer = new List<Alarm>();
+       
         public static Alarm[] buffer2 = new Alarm[5];
         public static CustomAuthorizationManager princ = new CustomAuthorizationManager();
         public static int cnt = 0;
-        public void CreateNew(Alarm a)
+        public bool CreateNew(Alarm a)
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
             string userName = Formater.ParseName(principal.Identity.Name);
@@ -31,17 +31,17 @@ namespace AlarmGenerateService
                     WindowsIdentity windowsIdentity = identity as WindowsIdentity;
                     a.NameOfClient = Formater.ParseName(windowsIdentity.Name);
                     Console.WriteLine($"Hello,{a.NameOfClient}");
-                    Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}.\n\tDate:{a.TimeOfGenerete}");
+                    //Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}.\n\tDate:{a.TimeOfGenerete}");
 
-                    buffer.Add(a);
                     buffer2[cnt] = a;
                     cnt++;
                   
-                    Console.WriteLine(cnt.ToString());
+                    Console.WriteLine(cnt.ToString() + "uspesno izgenerisan alarm");
                     //Console.WriteLine($"Duzina niza buffer2 je:{buffer2.Count()}\n");
 
 
                     WriteInFile(a);
+                    return true;
                 } else
                 {
                     string name = Thread.CurrentPrincipal.Identity.Name;
@@ -49,6 +49,7 @@ namespace AlarmGenerateService
                     string message = String.Format("Access is denied. User {0} try to call AlarmGenerator method (time : {1}). " +
                         "For this method need to be member of group AlarmGenerator.", name, time.TimeOfDay);
                     throw new FaultException<SecurityException>(new SecurityException(message));
+                    return false;
                 }
             }
             catch (FaultException<SecurityException>)
@@ -59,24 +60,20 @@ namespace AlarmGenerateService
                 string message = String.Format("Access is denied. User {0} try to call AlarmGenerator method (time : {1}). " +
                     "For this method need to be member of group AlarmGenerator.", name, time.TimeOfDay);
                 throw new FaultException<SecurityException>(new SecurityException(message));
+                return false;
             }
 
         }
 
-        public void CurrentStateOfBase()
+        public List<string> CurrentStateOfBase()
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
             string userName = Formater.ParseName(principal.Identity.Name);
             if (Thread.CurrentPrincipal.IsInRole("Read"))
             {
                 Console.WriteLine("Read successfully executed");
-            Console.WriteLine("BASE:");
-            List<string> lst = File.ReadAllLines(path).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
-            foreach (string s in lst)
-            {
-
-                Console.WriteLine(s);
-            }
+                List<string> lst = File.ReadAllLines(path).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
+                return lst;
             }
             else
             {
@@ -85,13 +82,13 @@ namespace AlarmGenerateService
                string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
                    "For this method need to be member of group Reader.", name, time.TimeOfDay);
                throw new FaultException<SecurityException>(new SecurityException(message));
+                
             }
         }
 
-        public void DeleteAll()
+        public bool DeleteAll()
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
-            string userName = Formater.ParseName(principal.Identity.Name);
 
             try
             {
@@ -100,6 +97,7 @@ namespace AlarmGenerateService
                 
                         Console.WriteLine("Delete All successfully executed");
                         File.Create(path).Close();
+                    return true;
                 }
                 else
                 {
@@ -108,6 +106,7 @@ namespace AlarmGenerateService
                     string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
                         "For this method need to be member of group Reader.", name, time.TimeOfDay);
                     throw new FaultException<SecurityException>(new SecurityException(message));
+                    return false;
                 }
 
             }
@@ -124,10 +123,9 @@ namespace AlarmGenerateService
             
         }
 
-        public void DeleteForClient()
+        public bool DeleteForClient()
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
-            string userName = Formater.ParseName(principal.Identity.Name);
 
           
             try
@@ -138,11 +136,17 @@ namespace AlarmGenerateService
                     WindowsIdentity windowsIdentity = identity as WindowsIdentity;
                     string uName = Formater.ParseName(windowsIdentity.Name);
                     List<string> lst = File.ReadAllLines(path).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
-                    
-                    lst.RemoveAll(x => x.Contains(uName));
-                    File.WriteAllLines(path, lst);
+                    while (lst.FindIndex(x => x.Contains(uName)) != -1)
+                    {
 
-                    Console.WriteLine("Delete for client successfully executed");
+                        int index = lst.FindIndex(x => x.Contains(uName));
+                        lst.RemoveRange(index, 5);
+
+                        File.WriteAllLines(path, lst);
+
+                        Console.WriteLine("Delete for client successfully executed");
+                    }
+						return true;
                  }
                 else
                 {
@@ -151,6 +155,7 @@ namespace AlarmGenerateService
                     string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
                         "For this method need to be member of group Reader.", name, time.TimeOfDay);
                     throw new FaultException<SecurityException>(new SecurityException(message));
+                    return false;
                 }
 
             }
@@ -159,6 +164,7 @@ namespace AlarmGenerateService
 
               
             }
+            return false;
         }
 
 
@@ -171,8 +177,9 @@ namespace AlarmGenerateService
 
             using (StreamWriter sw = new StreamWriter(path, true))
             {
-                sw.WriteLine(";Vreme generisanja alarma " + a.TimeOfGenerete.ToString(), true);
+                
                 sw.WriteLine("Ime klijenta:  " + a.NameOfClient , true);
+                sw.WriteLine("Vreme generisanja alarma " + a.TimeOfGenerete.ToString(), true);
                 sw.WriteLine("Poruka:  " + a.Message, true);
                 sw.WriteLine("Rizik:  " + a.TypeOfRisk.ToString()+";", true);
                 sw.WriteLine("------------------------------------", true);

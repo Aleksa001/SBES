@@ -14,16 +14,19 @@ namespace Common
     {
         [OperationContract]
         [FaultContract(typeof(SecurityException))]
-        void CurrentStateOfBase();
+        List<string> CurrentStateOfBase();
 
         [OperationContract]
-        void CreateNew(Alarm a);
+        [FaultContract(typeof(SecurityException))]
+        bool CreateNew(Alarm a);
 
         [OperationContract]
-        void DeleteAll();
+        [FaultContract(typeof(SecurityException))]
+        bool DeleteAll();
 
         [OperationContract]
-        void DeleteForClient();
+        [FaultContract(typeof(SecurityException))]
+        bool DeleteForClient();
 
         [OperationContract]
         void WriteInFile(Alarm a);

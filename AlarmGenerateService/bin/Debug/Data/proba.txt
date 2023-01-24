@@ -1,5 +1,15 @@
-;Vreme generisanja alarma 1/15/2023 8:35:25 PM
-Ime klijenta:  proba
-Poruka:  Veoma visok rizik
-Rizik:  High;
+------------------------------------
+------------------------------------
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/24/2023 8:48:20 PM
+Poruka:  Rizik nizak.
+Rizik:  Low;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/24/2023 8:48:21 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+------------------------------------
 ------------------------------------

@@ -9,7 +9,7 @@ namespace AlarmGenerateService
 {
 	public class Replicator
 	{
-		public Replicator(List<Alarm> a)
+		public Replicator()
 		{
 			NetTcpBinding binding = new NetTcpBinding();
 			
@@ -23,18 +23,31 @@ namespace AlarmGenerateService
 			using (ReplicatorProxy proxy = new ReplicatorProxy(binding, endpointAddress))
 			{
 
-				try
-				{
+                while (true)
+                {
+                    if (Service.cnt == 5)
+                    {
+                        Console.WriteLine("BUFFER JE POPUNJEN I SPREMNO JE ZA REPLIKACIJU!!!");
+                       
+                        try
+                        {
+                            Service.cnt = 0;
+                            //  Audit.ReplicationInitiated();
+                            proxy.Receive(Service.buffer2.ToList());
 
-					proxy.Receive(a);
-					
-				}
-				catch (Exception e)
-				{
-					
-					Console.WriteLine(e.Message);
-				}
-			}
+                            Console.WriteLine($"Trenutna vredonst CNT je {Service.cnt}\n");
+
+                        }
+                        catch (Exception e)
+                        {
+                            // Audit.ReplicationFailed();
+                            Console.WriteLine(e);
+                        }
+
+
+                    }
+                }
+            }
 		}
 	}
 }

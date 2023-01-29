@@ -11,8 +11,6 @@ namespace Common
 	[ServiceContract]
 	public interface IService2
 	{
-		[OperationContract]
-		void Receive(List<Alarm> a);
 
 		[OperationContract]
 		void WriteInFile(Alarm a);

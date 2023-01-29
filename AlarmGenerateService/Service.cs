@@ -13,7 +13,6 @@ namespace AlarmGenerateService
 {
     public class Service : IService
     {
-       
         public static Alarm[] buffer2 = new Alarm[5];
         public static CustomAuthorizationManager princ = new CustomAuthorizationManager();
         public static int cnt = 0;
@@ -30,16 +29,11 @@ namespace AlarmGenerateService
                     IIdentity identity = Thread.CurrentPrincipal.Identity;
                     WindowsIdentity windowsIdentity = identity as WindowsIdentity;
                     a.NameOfClient = Formater.ParseName(windowsIdentity.Name);
-                    
-                    //Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}.\n\tDate:{a.TimeOfGenerete}");
 
                     buffer2[cnt] = a;
                     cnt++;
                   
                     Console.WriteLine(cnt.ToString() + "\n Uspesno izgenerisan alarm");
-                    //Console.WriteLine($"Duzina niza buffer2 je:{buffer2.Count()}\n");
-
-
                     WriteInFile(a);
                     return true;
                 } else
@@ -49,7 +43,7 @@ namespace AlarmGenerateService
                     string message = String.Format("Access is denied. User {0} try to call AlarmGenerator method (time : {1}). " +
                         "For this method need to be member of group AlarmGenerator.", name, time.TimeOfDay);
                     throw new FaultException<SecurityException>(new SecurityException(message));
-                    return false;
+
                 }
             }
             catch (FaultException<SecurityException>)
@@ -60,7 +54,6 @@ namespace AlarmGenerateService
                 string message = String.Format("Access is denied. User {0} try to call AlarmGenerator method (time : {1}). " +
                     "For this method need to be member of group AlarmGenerator.", name, time.TimeOfDay);
                 throw new FaultException<SecurityException>(new SecurityException(message));
-                return false;
             }
 
         }

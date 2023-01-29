@@ -11,18 +11,7 @@ namespace AlarmGenerateService2
 {
 	public class Service : IService2
 	{
-		public void Receive(List<Alarm> alarmi)
-		{
-			foreach (var a in alarmi)
-			{
-				Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}\n\tDate:{a.TimeOfGenerete}");
-				Console.WriteLine("\n-----------------------------------------------------------------------------------------\n");
-				string message = $"Alarm:\n\tMessage:{a.Message}.\n\tClient:{a.NameOfClient}.\n\tDate:{a.TimeOfGenerete}\n\tRisk:{a.TypeOfRisk}.";
-				WriteInFile(a);
-               
-				//WriteInFile(a.Message);
-			}
-		}
+		
 		public static string fileName = "proba1.txt";
 		public static string path = Path.Combine(Environment.CurrentDirectory, @"Data\", fileName);
 

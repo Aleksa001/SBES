@@ -62,3 +62,12 @@ C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\Common\obj\Debug\
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\Common\obj\Debug\Common.dll
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\Common\obj\Debug\Common.pdb
 D:\PROJECTS\SBES\Common\obj\Debug\Common.Logger.AuditEventFile.resources
+D:\Tutorials\SBES\Common\bin\Debug\Common.dll
+D:\Tutorials\SBES\Common\bin\Debug\Common.pdb
+D:\Tutorials\SBES\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+D:\Tutorials\SBES\Common\obj\Debug\Common.Logger.AuditEventFile.resources
+D:\Tutorials\SBES\Common\obj\Debug\Common.RolesConfigFile.resources
+D:\Tutorials\SBES\Common\obj\Debug\Common.csproj.GenerateResource.cache
+D:\Tutorials\SBES\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\Tutorials\SBES\Common\obj\Debug\Common.dll
+D:\Tutorials\SBES\Common\obj\Debug\Common.pdb

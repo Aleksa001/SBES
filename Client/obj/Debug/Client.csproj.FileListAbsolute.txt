@@ -97,3 +97,13 @@ C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\Client\obj\Debug\
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\Client\obj\Debug\Client.csproj.CopyComplete
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\Client\obj\Debug\Client.exe
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\Client\obj\Debug\Client.pdb
+D:\Tutorials\SBES\Client\bin\Debug\Client.exe.config
+D:\Tutorials\SBES\Client\bin\Debug\Client.exe
+D:\Tutorials\SBES\Client\bin\Debug\Client.pdb
+D:\Tutorials\SBES\Client\bin\Debug\Common.dll
+D:\Tutorials\SBES\Client\bin\Debug\Common.pdb
+D:\Tutorials\SBES\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+D:\Tutorials\SBES\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\Tutorials\SBES\Client\obj\Debug\Client.csproj.CopyComplete
+D:\Tutorials\SBES\Client\obj\Debug\Client.exe
+D:\Tutorials\SBES\Client\obj\Debug\Client.pdb

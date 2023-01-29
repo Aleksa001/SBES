@@ -18,7 +18,6 @@ namespace AlarmGenerateService
 
             NetTcpBinding binding = new NetTcpBinding();
 			
-			
 			binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
 
 			EndpointAddress endpointAddress = new EndpointAddress(new Uri("net.tcp://localhost:9997/Replicator"), new X509CertificateEndpointIdentity(srvCert));

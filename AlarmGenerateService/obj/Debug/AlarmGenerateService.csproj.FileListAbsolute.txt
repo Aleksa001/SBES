@@ -99,3 +99,14 @@ C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateServ
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.pdb
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\bin\Debug\System.Security.Principal.Windows.dll
 D:\PROJECTS\SBES\AlarmGenerateService\bin\Debug\System.Security.Principal.Windows.dll
+D:\Tutorials\SBES\AlarmGenerateService\bin\Debug\AlarmGenerateService.exe.config
+D:\Tutorials\SBES\AlarmGenerateService\bin\Debug\AlarmGenerateService.exe
+D:\Tutorials\SBES\AlarmGenerateService\bin\Debug\AlarmGenerateService.pdb
+D:\Tutorials\SBES\AlarmGenerateService\bin\Debug\Common.dll
+D:\Tutorials\SBES\AlarmGenerateService\bin\Debug\System.Security.Principal.Windows.dll
+D:\Tutorials\SBES\AlarmGenerateService\bin\Debug\Common.pdb
+D:\Tutorials\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.AssemblyReference.cache
+D:\Tutorials\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.CoreCompileInputs.cache
+D:\Tutorials\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.CopyComplete
+D:\Tutorials\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.exe
+D:\Tutorials\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.pdb

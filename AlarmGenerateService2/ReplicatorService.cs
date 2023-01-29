@@ -15,8 +15,8 @@ namespace AlarmGenerateService2
 			Console.WriteLine("Podaci replicirani uspesno");
 			foreach (var a in alarmi)
 			{
-				//Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}\n\tDate:{a.TimeOfGenerete}");
-				//Console.WriteLine("\n-----------------------------------------------------------------------------------------\n");
+				Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}\n\tDate:{a.TimeOfGenerete}");
+				Console.WriteLine("\n-----------------------------------------------------------------------------------------\n");
 				Service s = new Service();
 				s.WriteInFile(a);
 				Console.WriteLine("Uspesan upis");

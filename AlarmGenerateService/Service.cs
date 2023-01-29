@@ -137,7 +137,7 @@ namespace AlarmGenerateService
 
                         File.WriteAllLines(path, lst);
 
-                        Console.WriteLine("Delete for client successfully executed");
+                        Console.WriteLine($"Delete for client {windowsIdentity.Name} successfully executed");
                     }
 						return true;
                  }

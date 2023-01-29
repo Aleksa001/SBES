@@ -22,6 +22,8 @@ namespace AlarmGenerateService
 
 			EndpointAddress endpointAddress = new EndpointAddress(new Uri("net.tcp://localhost:9997/Replicator"), new X509CertificateEndpointIdentity(srvCert));
 
+
+
 			using (ReplicatorProxy proxy = new ReplicatorProxy(binding, endpointAddress))
 			{
 

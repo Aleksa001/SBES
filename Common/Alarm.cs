@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 namespace AlarmGenerateService
 {
     [DataContract]
+    [Serializable]
     public class Alarm
     {
         private DateTime timeOfGenerete;

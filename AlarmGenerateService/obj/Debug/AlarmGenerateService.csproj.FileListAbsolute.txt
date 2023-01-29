@@ -110,3 +110,11 @@ D:\Tutorials\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.Cor
 D:\Tutorials\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.CopyComplete
 D:\Tutorials\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.exe
 D:\Tutorials\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.pdb
+D:\Tutorials\SBES\AlarmGenerateService\bin\Debug\Newtonsoft.Json.Bson.dll
+D:\Tutorials\SBES\AlarmGenerateService\bin\Debug\Newtonsoft.Json.dll
+D:\Tutorials\SBES\AlarmGenerateService\bin\Debug\Newtonsoft.Json.pdb
+D:\Tutorials\SBES\AlarmGenerateService\bin\Debug\Newtonsoft.Json.xml
+D:\Tutorials\SBES\AlarmGenerateService\bin\Debug\Newtonsoft.Json.Bson.pdb
+D:\Tutorials\SBES\AlarmGenerateService\bin\Debug\Newtonsoft.Json.Bson.xml
+D:\Tutorials\SBES\AlarmGenerateService\bin\Debug\Nancy.dll
+D:\Tutorials\SBES\AlarmGenerateService\bin\Debug\Nancy.xml

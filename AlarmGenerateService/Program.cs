@@ -40,7 +40,10 @@ namespace AlarmGenerateService
             host.Authorization.ExternalAuthorizationPolicies = policies.AsReadOnly();
 
             host.Open();
-            
+
+
+            Service s = new Service();
+            s.NotReplicated();
 
             Console.WriteLine("Korisnik koji je pokrenuo servera :" + Formater.ParseName(WindowsIdentity.GetCurrent().Name));
 

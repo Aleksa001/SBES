@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Security.Principal;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using AlarmGenerateService;
 using Common;
+using Common.Manager;
 using Common.RBAC;
 
 namespace AlarmGenerateService2
@@ -23,22 +25,22 @@ namespace AlarmGenerateService2
 
             NetTcpBinding binding2 = new NetTcpBinding();
 
-            //binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
+            binding2.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
 
 
-            binding2.Security.Mode = SecurityMode.Transport;
-            binding2.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows;
-            binding2.Security.Transport.ProtectionLevel = System.Net.Security.ProtectionLevel.EncryptAndSign;
+            //binding2.Security.Mode = SecurityMode.Transport;
+            //binding2.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows;
+            //binding2.Security.Transport.ProtectionLevel = System.Net.Security.ProtectionLevel.EncryptAndSign;
 
             ServiceHost host2 = new ServiceHost(typeof(ReplicatorService));
             host2.AddServiceEndpoint(typeof(IReplicator), binding2, address2);
 
             // koristi se chain trust 
-            /* host.Credentials.ClientCertificate.Authentication.CertificateValidationMode = System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust;
-             host.Credentials.ClientCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;
-             // podevanje svog sertifikata kojim se predstavlja
-             host.Credentials.ServiceCertificate.Certificate = CertManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, srvCertCN);
-            */
+            host2.Credentials.ClientCertificate.Authentication.CertificateValidationMode = System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust;
+            host2.Credentials.ClientCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;
+            // podevanje svog sertifikata kojim se predstavlja
+            host2.Credentials.ServiceCertificate.Certificate = CertManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, srvCertCN);
+
             /* ServiceSecurityAuditBehavior newAudit = new ServiceSecurityAuditBehavior();
              newAudit.AuditLogLocation = AuditLogLocation.Application;
              newAudit.ServiceAuthorizationAuditLevel = AuditLevel.SuccessOrFailure;

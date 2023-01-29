@@ -39,10 +39,7 @@ D:\PROJECTS\SBES\AlarmGenerateService2\bin\Debug\AlarmGenerateService2.exe.confi
 D:\PROJECTS\SBES\AlarmGenerateService2\bin\Debug\AlarmGenerateService2.exe
 D:\PROJECTS\SBES\AlarmGenerateService2\bin\Debug\AlarmGenerateService2.pdb
 D:\PROJECTS\SBES\AlarmGenerateService2\bin\Debug\Common.dll
-D:\PROJECTS\SBES\AlarmGenerateService2\bin\Debug\Manager.exe
 D:\PROJECTS\SBES\AlarmGenerateService2\bin\Debug\Common.pdb
-D:\PROJECTS\SBES\AlarmGenerateService2\bin\Debug\Manager.pdb
-D:\PROJECTS\SBES\AlarmGenerateService2\bin\Debug\Manager.exe.config
 D:\PROJECTS\SBES\AlarmGenerateService2\obj\Debug\AlarmGenerateService2.csproj.AssemblyReference.cache
 D:\PROJECTS\SBES\AlarmGenerateService2\obj\Debug\AlarmGenerateService2.csproj.CoreCompileInputs.cache
 D:\PROJECTS\SBES\AlarmGenerateService2\obj\Debug\AlarmGenerateService2.csproj.CopyComplete

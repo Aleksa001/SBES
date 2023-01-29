@@ -12,13 +12,13 @@ using System.Threading.Tasks;
 
 namespace AlarmGenerateService
 {
-	public class ServerProxy : ChannelFactory<IReplicator>, IReplicator, IDisposable
+	public class ServerProxy : ChannelFactory<IService2>, IService2, IDisposable
 	{
 		public ServerProxy(NetTcpBinding binding, string address) : base(binding, address)
 		{
 			factory = this.CreateChannel();
 		}
-		IReplicator factory;
+		IService2 factory;
 
 
 		public ServerProxy(NetTcpBinding binding, EndpointAddress address) : base(binding, address)
@@ -46,6 +46,11 @@ namespace AlarmGenerateService
                 Console.WriteLine(e);
             }
 			
+		}
+
+		public void WriteInFile(Alarm a)
+		{
+			throw new NotImplementedException();
 		}
 	}
 }

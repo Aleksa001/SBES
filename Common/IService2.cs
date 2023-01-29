@@ -15,6 +15,6 @@ namespace Common
 		void Receive(List<Alarm> a);
 
 		[OperationContract]
-		void WriteInFile(string message);
+		void WriteInFile(Alarm a);
 	}
 }

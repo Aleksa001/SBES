@@ -1,15 +1,175 @@
-------------------------------------
-------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:07:01 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
 ------------------------------------
 Ime klijenta:  User
-Vreme generisanja alarma 1/24/2023 8:48:20 PM
+Vreme generisanja alarma 1/29/2023 12:07:03 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:07:04 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:07:05 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:07:06 PM
+Poruka:  Veoma visok rizik
+Rizik:  High;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:12:21 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:12:37 PM
+Poruka:  Veoma visok rizik
+Rizik:  High;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:12:38 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:12:39 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:12:40 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:18:59 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:19:00 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:19:01 PM
+Poruka:  Veoma visok rizik
+Rizik:  High;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:19:02 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:19:02 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:19:55 PM
 Poruka:  Rizik nizak.
 Rizik:  Low;
 ------------------------------------
 Ime klijenta:  User
-Vreme generisanja alarma 1/24/2023 8:48:21 PM
+Vreme generisanja alarma 1/29/2023 12:19:56 PM
 Poruka:  Pripazite, rizik raste
 Rizik:  Medium;
 ------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:19:56 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
 ------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:19:58 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:19:58 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:30:08 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:30:09 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:30:09 PM
+Poruka:  Rizik nizak.
+Rizik:  Low;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:30:10 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:30:10 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:34:52 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:34:53 PM
+Poruka:  Veoma visok rizik
+Rizik:  High;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:34:53 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:34:53 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:34:54 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:35:19 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:35:20 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:35:20 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:35:21 PM
+Poruka:  Rizik nizak.
+Rizik:  Low;
+------------------------------------
+Ime klijenta:  User
+Vreme generisanja alarma 1/29/2023 12:35:21 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
 ------------------------------------

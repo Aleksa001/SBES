@@ -47,7 +47,7 @@ namespace AlarmGenerateService
             Console.WriteLine("Korisnik koji je pokrenuo servera :" + Formater.ParseName(WindowsIdentity.GetCurrent().Name));
 
             Console.WriteLine("Primarni servis je pokrenut.");
-            Console.WriteLine("Pokrecem komunicakiju sa Replikatorom.");
+            
 
            // binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
             string srvCertCN = "replikator";
@@ -57,7 +57,7 @@ namespace AlarmGenerateService
             
             
 
-            EndpointAddress endpointAddress = new EndpointAddress(new Uri("net.tcp://localhost:9997/Replicator")/*, new X509CertificateEndpointIdentity(srvCert)*/);
+            EndpointAddress endpointAddress = new EndpointAddress(new Uri("net.tcp://localhost:9998/Service")/*, new X509CertificateEndpointIdentity(srvCert)*/);
 
 		
             using(ServerProxy proxy = new ServerProxy(binding, endpointAddress))
@@ -66,9 +66,11 @@ namespace AlarmGenerateService
                 //proxy.Credentials.ServiceCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;
                 while (true) { 
                     
+                    
                     if (Service.cnt == 5)
                     {
                         Console.WriteLine("BUFFER JE POPUNJEN I SPREMNO JE ZA REPLIKACIJU!!!");
+                        Replicator primary = new Replicator(Service.buffer2.ToList());
                         try
                         {  
                             Service.cnt = 0;

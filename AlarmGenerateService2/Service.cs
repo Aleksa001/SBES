@@ -18,7 +18,7 @@ namespace AlarmGenerateService2
 				Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}\n\tDate:{a.TimeOfGenerete}");
 				Console.WriteLine("\n-----------------------------------------------------------------------------------------\n");
 				string message = $"Alarm:\n\tMessage:{a.Message}.\n\tClient:{a.NameOfClient}.\n\tDate:{a.TimeOfGenerete}\n\tRisk:{a.TypeOfRisk}.";
-				WriteInFile(message);
+				WriteInFile(a);
                
 				//WriteInFile(a.Message);
 			}
@@ -26,13 +26,17 @@ namespace AlarmGenerateService2
 		public static string fileName = "proba1.txt";
 		public static string path = Path.Combine(Environment.CurrentDirectory, @"Data\", fileName);
 
-		public void WriteInFile(string message)
+		public void WriteInFile(Alarm a)
 		{
 
 			using (StreamWriter sw = new StreamWriter(path, true))
 			{
-				sw.WriteLine(message, true);
-				sw.WriteLine("---------------------------------------------------------------------------");
+
+				sw.WriteLine("Ime klijenta:  " + a.NameOfClient, true);
+				sw.WriteLine("Vreme generisanja alarma " + a.TimeOfGenerete.ToString(), true);
+				sw.WriteLine("Poruka:  " + a.Message, true);
+				sw.WriteLine("Rizik:  " + a.TypeOfRisk.ToString() + ";", true);
+				sw.WriteLine("------------------------------------", true);
 			}
 
 

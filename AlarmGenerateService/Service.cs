@@ -30,13 +30,13 @@ namespace AlarmGenerateService
                     IIdentity identity = Thread.CurrentPrincipal.Identity;
                     WindowsIdentity windowsIdentity = identity as WindowsIdentity;
                     a.NameOfClient = Formater.ParseName(windowsIdentity.Name);
-                    Console.WriteLine($"Hello,{a.NameOfClient}");
+                    
                     //Console.WriteLine($"Alarm:\n\tMessage:{a.Message}\n\tClient:{a.NameOfClient}.\n\tDate:{a.TimeOfGenerete}");
 
                     buffer2[cnt] = a;
                     cnt++;
                   
-                    Console.WriteLine(cnt.ToString() + "uspesno izgenerisan alarm");
+                    Console.WriteLine(cnt.ToString() + "\n Uspesno izgenerisan alarm");
                     //Console.WriteLine($"Duzina niza buffer2 je:{buffer2.Count()}\n");
 
 

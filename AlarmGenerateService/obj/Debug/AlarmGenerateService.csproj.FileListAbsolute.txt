@@ -100,3 +100,4 @@ C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateServ
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.csproj.CopyComplete
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.exe
 C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\obj\Debug\AlarmGenerateService.pdb
+C:\Users\User\OneDrive - Univerzitet u Novom Sadu\Desktop\SBES\AlarmGenerateService\bin\Debug\System.Security.Principal.Windows.dll

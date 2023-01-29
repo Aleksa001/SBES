@@ -1,25 +1,20 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Security.Principal;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
-using AlarmGenerateService;
-using Common;
-using Common.RBAC;
-using Manager;
 
-namespace Replicator
+namespace AlarmGenerateService
 {
-	public class ReplicatorProxy : ChannelFactory<IService2>, IService2, IDisposable
+	public class ReplicatorProxy : ChannelFactory<IReplicator>, IReplicator, IDisposable
 	{
 		public ReplicatorProxy(NetTcpBinding binding, string address) : base(binding, address)
 		{
 			factory = this.CreateChannel();
 		}
-		IService2 factory;
+		IReplicator factory;
 
 
 		public ReplicatorProxy(NetTcpBinding binding, EndpointAddress address) : base(binding, address)
@@ -29,7 +24,8 @@ namespace Replicator
 			this.Credentials.ServiceCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;
 
 			this.Credentials.ClientCertificate.Certificate = CertManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, cltCertCN);
-			*/factory = this.CreateChannel();
+			*/
+			factory = this.CreateChannel();
 			//Credentials.Windows.AllowNtlm = false;
 		}
 

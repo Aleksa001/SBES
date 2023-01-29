@@ -1,7 +1,7 @@
 ﻿using Common;
 using Common.Logger;
 using Common.RBAC;
-using Manager;
+using Common.Manager;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Policy;

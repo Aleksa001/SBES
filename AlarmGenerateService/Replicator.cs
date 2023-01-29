@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Common.Manager;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,14 +13,15 @@ namespace AlarmGenerateService
 	{
 		public Replicator()
 		{
-			NetTcpBinding binding = new NetTcpBinding();
-			
-			
-			binding.Security.Mode = SecurityMode.Transport;
-			binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows;
-			binding.Security.Transport.ProtectionLevel = System.Net.Security.ProtectionLevel.EncryptAndSign;
+            string srvCertCN = "ags2";
+            X509Certificate2 srvCert = CertManager.GetCertificateFromStorage(StoreName.TrustedPeople, StoreLocation.LocalMachine, srvCertCN);
 
-			EndpointAddress endpointAddress = new EndpointAddress(new Uri("net.tcp://localhost:9997/Replicator"));
+            NetTcpBinding binding = new NetTcpBinding();
+			
+			
+			binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
+
+			EndpointAddress endpointAddress = new EndpointAddress(new Uri("net.tcp://localhost:9997/Replicator"), new X509CertificateEndpointIdentity(srvCert));
 
 			using (ReplicatorProxy proxy = new ReplicatorProxy(binding, endpointAddress))
 			{

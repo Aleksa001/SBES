@@ -6,3 +6,4 @@
 {"timeOfGenerete":"2023-01-30T12:15:43.6058522+01:00","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1}
 {"timeOfGenerete":"2023-01-30T12:15:44.2748878+01:00","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1}
 {"timeOfGenerete":"2023-01-30T12:32:51.1810799+01:00","nameOfClient":"wcfclient","message":"Rizik nizak.","typeOfRisk":0}
+{"timeOfGenerete":"2023-01-30T16:01:39.0744910+01:00","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1}

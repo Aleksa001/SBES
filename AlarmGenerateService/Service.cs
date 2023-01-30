@@ -111,33 +111,39 @@ namespace AlarmGenerateService
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
             string uName = Formater.ParseName(principal.Identity.Name);
+            Console.WriteLine("USER: "+uName);
             try
             {
                 if (Thread.CurrentPrincipal.IsInRole("AlarmAdmin"))
                 {
                     IIdentity identity = Thread.CurrentPrincipal.Identity;
                     WindowsIdentity windowsIdentity = identity as WindowsIdentity;
-                    string[] lst = File.ReadAllLines(path);
-
-                    foreach (string line in lst)
-                    {
-                        Alarm a = serializer.Deserialize<Alarm>(line);
-                        alarms.Add(a);
-                    }
+                    Console.WriteLine("BRISANJE!!! "+ windowsIdentity.Name);
+                    alarms = ReadFromFile();
 
                     foreach (Alarm a in alarms)
                     {
+                        Console.WriteLine("name fo client: "+a.NameOfClient);
                         if (a.NameOfClient == uName)
                         {
-                            alarms.Remove(a);
+                            bool succ=alarms.Remove(a);
+                            Console.WriteLine("BRISANJE IZ LISTE: "+succ.ToString());
                         }
                     }
 
-                    foreach (var a in alarms)
+                    if (alarms.Count() != 0)
                     {
-                        string json = serializer.Serialize(a);
-                        File.WriteAllText(path, json + Environment.NewLine);    //gazi prethodni tekst u fajlu
+                        foreach (Alarm a in alarms)
+                        {
+                            string json = serializer.Serialize(a);
+                            File.AppendAllText(path, json + Environment.NewLine);    //gazi prethodni tekst u fajlu
+                            Console.WriteLine("pisanjee");
+                        }
+                    } else
+                    {
+                        File.Create(path).Close();
                     }
+                    
 
                     Console.WriteLine($"Delete for client {windowsIdentity.Name} successfully executed");
                     return true;

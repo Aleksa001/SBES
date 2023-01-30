@@ -18,6 +18,10 @@ namespace AlarmGenerateService
         public static Alarm[] buffer2 = new Alarm[5];
         public static CustomAuthorizationManager princ = new CustomAuthorizationManager();
         public static int cnt = 0;
+
+
+        JavaScriptSerializer serializer = new JavaScriptSerializer();
+        List<Alarm> alarms = new List<Alarm>();
         public bool CreateNew(Alarm a)
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
@@ -98,47 +102,70 @@ namespace AlarmGenerateService
                 string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
                     "For this method need to be member of group Reader.", name, time.TimeOfDay);
                 throw new FaultException<SecurityException>(new SecurityException(message));
+
+                return false;
             }
-            return false;
         }
 
         public bool DeleteForClient()
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
-
-            if (Thread.CurrentPrincipal.IsInRole("AlarmAdmin"))
+            string uName = Formater.ParseName(principal.Identity.Name);
+            try
             {
-            IIdentity identity = Thread.CurrentPrincipal.Identity;
-            WindowsIdentity windowsIdentity = identity as WindowsIdentity;
-            string uName = Formater.ParseName(windowsIdentity.Name);
-            List<string> lst = File.ReadAllLines(path).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
-            while (lst.FindIndex(x => x.Contains(uName)) != -1)
-            {
+                if (Thread.CurrentPrincipal.IsInRole("AlarmAdmin"))
+                {
+                    IIdentity identity = Thread.CurrentPrincipal.Identity;
+                    WindowsIdentity windowsIdentity = identity as WindowsIdentity;
+                    string[] lst = File.ReadAllLines(path);
 
-                int index = lst.FindIndex(x => x.Contains(uName));
-                lst.RemoveRange(index, 5);
+                    foreach (string line in lst)
+                    {
+                        Alarm a = serializer.Deserialize<Alarm>(line);
+                        alarms.Add(a);
+                    }
 
-                File.WriteAllLines(path, lst);
+                    foreach (Alarm a in alarms)
+                    {
+                        if (a.NameOfClient == uName)
+                        {
+                            alarms.Remove(a);
+                        }
+                    }
 
-                Console.WriteLine($"Delete for client {windowsIdentity.Name} successfully executed");
+                    foreach (var a in alarms)
+                    {
+                        string json = serializer.Serialize(a);
+                        File.WriteAllText(path, json + Environment.NewLine);    //gazi prethodni tekst u fajlu
+                    }
+
+                    Console.WriteLine($"Delete for client {windowsIdentity.Name} successfully executed");
+                    return true;
+                }
+                else
+                {
+                    string name = Thread.CurrentPrincipal.Identity.Name;
+                    DateTime time = DateTime.Now;
+                    string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
+                        "For this method need to be member of group Reader.", name, time.TimeOfDay);
+                    throw new FaultException<SecurityException>(new SecurityException(message));
+                    return false;
+                }
             }
-				return true;
-            }
-            else
+            catch
             {
                 string name = Thread.CurrentPrincipal.Identity.Name;
                 DateTime time = DateTime.Now;
                 string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
                     "For this method need to be member of group Reader.", name, time.TimeOfDay);
                 throw new FaultException<SecurityException>(new SecurityException(message));
-                return false;
             }
+            
         }
 
 
         public static string fileName = "proba.txt";
         public static string path = Path.Combine(Environment.CurrentDirectory, @"Data\", fileName);
-        JavaScriptSerializer serializer = new JavaScriptSerializer();
 
         public void WriteInFile(Alarm a)
         {
@@ -146,19 +173,31 @@ namespace AlarmGenerateService
             File.AppendAllText(path, json+Environment.NewLine);
         }
 
-        public void NotReplicated()
+        private List<Alarm> ReadFromFile()
         {
             try
             {
                 string[] lst = File.ReadAllLines(path);
-                List<Alarm> alarms = new List<Alarm>();
 
-                foreach(string line in lst)
+                foreach (string line in lst)
                 {
                     Alarm a = serializer.Deserialize<Alarm>(line);
                     alarms.Add(a);
                 }
-                
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Read from file "+e.Message);
+            }
+
+            return alarms;
+        }
+
+        public void NotReplicated()
+        {
+            try
+            {
+                alarms=ReadFromFile();
                 cnt = alarms.Count() % 5;
                 if (cnt > 0)
                 {

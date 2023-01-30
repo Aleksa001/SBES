@@ -107,14 +107,14 @@ namespace Client
             catch (FaultException<SecurityException> e)
             {
                 Console.WriteLine("Korisnik nema pravo pristupa ovoj metodi!\tPotrebna permisija: AlarmAdmin!");
+                Console.WriteLine("Error while trying to Read : {0}", e.Detail.Message);
                 return false;
-                //Console.WriteLine("Error while trying to Read : {0}", e.Detail.Message);
             }
             catch (Exception e)
             {
                 Console.WriteLine("Korisnik nema pravo pristupa ovoj metodi!\tPotrebna permisija: AlarmAdmin!");
                 return false;
-                //Console.WriteLine(e.Message);
+                Console.WriteLine(e.Message);
             }
         }
 

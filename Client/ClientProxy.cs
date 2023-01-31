@@ -107,7 +107,7 @@ namespace Client
             catch (FaultException<SecurityException> e)
             {
                 Console.WriteLine("Korisnik nema pravo pristupa ovoj metodi!\tPotrebna permisija: AlarmAdmin!");
-                Console.WriteLine("Error while trying to Read : {0}", e.Detail.Message);
+                Console.WriteLine("Error while trying to Delete for client : {0}", e.Detail.Message);
                 return false;
             }
             catch (Exception e)

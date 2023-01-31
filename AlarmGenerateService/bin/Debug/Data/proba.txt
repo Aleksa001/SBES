@@ -1,9 +1,2 @@
-{"timeOfGenerete":"2023-01-30T12:15:39.2061894+01:00","nameOfClient":"wcfclient","message":"Veoma visok rizik","typeOfRisk":2}
-{"timeOfGenerete":"2023-01-30T12:15:39.9492420+01:00","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1}
-{"timeOfGenerete":"2023-01-30T12:15:40.5282879+01:00","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1}
-{"timeOfGenerete":"2023-01-30T12:15:41.0143283+01:00","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1}
-{"timeOfGenerete":"2023-01-30T12:15:41.4723561+01:00","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1}
-{"timeOfGenerete":"2023-01-30T12:15:43.6058522+01:00","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1}
-{"timeOfGenerete":"2023-01-30T12:15:44.2748878+01:00","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1}
-{"timeOfGenerete":"2023-01-30T12:32:51.1810799+01:00","nameOfClient":"wcfclient","message":"Rizik nizak.","typeOfRisk":0}
-{"timeOfGenerete":"2023-01-30T16:01:39.0744910+01:00","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1}
+{"timeOfGenerete":"2023-01-31T22:39:46.9276408Z","nameOfClient":"wcfclient","message":"Rizik nizak.","typeOfRisk":0}
+{"timeOfGenerete":"2023-01-31T22:39:47.5526989Z","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1}

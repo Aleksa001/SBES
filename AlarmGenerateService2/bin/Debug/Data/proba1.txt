@@ -73,3 +73,53 @@ Vreme generisanja alarma 1/30/2023 12:15:41 PM
 Poruka:  Pripazite, rizik raste
 Rizik:  Medium;
 ------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 1/31/2023 10:12:27 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 1/31/2023 10:14:36 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 1/31/2023 10:14:37 PM
+Poruka:  Veoma visok rizik
+Rizik:  High;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 1/31/2023 10:27:27 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfservice
+Vreme generisanja alarma 1/31/2023 11:38:44 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfservice
+Vreme generisanja alarma 1/31/2023 11:38:50 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 1/31/2023 11:38:56 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 1/31/2023 11:39:01 PM
+Poruka:  Rizik nizak.
+Rizik:  Low;
+------------------------------------
+Ime klijenta:  wcfservice
+Vreme generisanja alarma 1/31/2023 11:39:05 PM
+Poruka:  Veoma visok rizik
+Rizik:  High;
+------------------------------------
+Ime klijenta:  wcfservice
+Vreme generisanja alarma 1/31/2023 11:39:06 PM
+Poruka:  Veoma visok rizik
+Rizik:  High;
+------------------------------------

@@ -21,7 +21,6 @@ namespace AlarmGenerateService
 
 
         JavaScriptSerializer serializer = new JavaScriptSerializer();
-        List<Alarm> alarms = new List<Alarm>();
         public bool CreateNew(Alarm a)
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
@@ -111,39 +110,25 @@ namespace AlarmGenerateService
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
             string uName = Formater.ParseName(principal.Identity.Name);
-            Console.WriteLine("USER: "+uName);
+            List<Alarm> alarms = new List<Alarm>();
             try
             {
                 if (Thread.CurrentPrincipal.IsInRole("AlarmAdmin"))
                 {
                     IIdentity identity = Thread.CurrentPrincipal.Identity;
                     WindowsIdentity windowsIdentity = identity as WindowsIdentity;
-                    Console.WriteLine("BRISANJE!!! "+ windowsIdentity.Name);
+                    Console.WriteLine("Delete alarms for client: "+ windowsIdentity.Name);
                     alarms = ReadFromFile();
+                    File.WriteAllText(path, string.Empty);
 
                     foreach (Alarm a in alarms)
                     {
-                        Console.WriteLine("name fo client: "+a.NameOfClient);
-                        if (a.NameOfClient == uName)
+                        Console.WriteLine("name of client: "+a.NameOfClient);
+                        if (a.NameOfClient != uName)
                         {
-                            bool succ=alarms.Remove(a);
-                            Console.WriteLine("BRISANJE IZ LISTE: "+succ.ToString());
+                            WriteInFile(a);
                         }
                     }
-
-                    if (alarms.Count() != 0)
-                    {
-                        foreach (Alarm a in alarms)
-                        {
-                            string json = serializer.Serialize(a);
-                            File.AppendAllText(path, json + Environment.NewLine);    //gazi prethodni tekst u fajlu
-                            Console.WriteLine("pisanjee");
-                        }
-                    } else
-                    {
-                        File.Create(path).Close();
-                    }
-                    
 
                     Console.WriteLine($"Delete for client {windowsIdentity.Name} successfully executed");
                     return true;
@@ -152,18 +137,17 @@ namespace AlarmGenerateService
                 {
                     string name = Thread.CurrentPrincipal.Identity.Name;
                     DateTime time = DateTime.Now;
-                    string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
-                        "For this method need to be member of group Reader.", name, time.TimeOfDay);
+                    string message = String.Format("Access is denied. User {0} try to call AlarmAdmin method (time : {1}). " +
+                        "For this method need to be member of group AlarmAdmin.", name, time.TimeOfDay);
                     throw new FaultException<SecurityException>(new SecurityException(message));
                     return false;
                 }
             }
-            catch
+            catch(Exception e)
             {
                 string name = Thread.CurrentPrincipal.Identity.Name;
                 DateTime time = DateTime.Now;
-                string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
-                    "For this method need to be member of group Reader.", name, time.TimeOfDay);
+                string message = String.Format(e.Message);
                 throw new FaultException<SecurityException>(new SecurityException(message));
             }
             
@@ -181,6 +165,7 @@ namespace AlarmGenerateService
 
         private List<Alarm> ReadFromFile()
         {
+            List<Alarm> alarms = new List<Alarm>();
             try
             {
                 string[] lst = File.ReadAllLines(path);
@@ -201,6 +186,7 @@ namespace AlarmGenerateService
 
         public void NotReplicated()
         {
+            List<Alarm> alarms = new List<Alarm>();
             try
             {
                 alarms=ReadFromFile();

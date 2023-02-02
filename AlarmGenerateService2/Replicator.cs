@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Security.Principal;
 using System.ServiceModel;
+using System.ServiceModel.Description;
 using System.Text;
 using System.Threading.Tasks;
 using AlarmGenerateService;
@@ -36,13 +37,13 @@ namespace AlarmGenerateService2
             // podevanje svog sertifikata kojim se predstavlja
             host2.Credentials.ServiceCertificate.Certificate = CertManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, srvCertCN);
 
-            //ServiceSecurityAuditBehavior newAudit = new ServiceSecurityAuditBehavior();
-            //newAudit.AuditLogLocation = AuditLogLocation.Application;
-            //newAudit.ServiceAuthorizationAuditLevel = AuditLevel.SuccessOrFailure;
+            ServiceSecurityAuditBehavior newAudit = new ServiceSecurityAuditBehavior();
+            newAudit.AuditLogLocation = AuditLogLocation.Application;
+            newAudit.ServiceAuthorizationAuditLevel = AuditLevel.SuccessOrFailure;
 
-            //host.Description.Behaviors.Remove<ServiceSecurityAuditBehavior>();
-            //host.Description.Behaviors.Add(newAudit);
-            
+            host2.Description.Behaviors.Remove<ServiceSecurityAuditBehavior>();
+            host2.Description.Behaviors.Add(newAudit);
+
 
             host2.Open();
 

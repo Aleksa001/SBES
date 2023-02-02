@@ -1,4 +1,5 @@
-﻿using Common.Manager;
+﻿using Common.Logger;
+using Common.Manager;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,7 @@ namespace AlarmGenerateService
 
 			EndpointAddress endpointAddress = new EndpointAddress(new Uri("net.tcp://localhost:9997/Replicator"), new X509CertificateEndpointIdentity(srvCert));
 
-
+            Service s = new Service();
 
 			using (ReplicatorProxy proxy = new ReplicatorProxy(binding, endpointAddress))
 			{
@@ -35,16 +36,24 @@ namespace AlarmGenerateService
                        
                         try
                         {
-                            Service.cnt = 0;
-                            //  Audit.ReplicationInitiated();
+
+                            Audit.ReplicationInitiated();
                             proxy.Receive(Service.buffer2.ToList());
 
+                            List<Alarm> alarms = s.ReadFromFile();
+
+                            foreach (Alarm a in alarms)
+                            {
+                                a.Replicated = true;
+                            }
+                            s.WriteReplicatedAlarms(alarms);
+                            Service.cnt = 0;
                             Console.WriteLine($"Trenutna vredonst CNT je {Service.cnt}\n");
 
                         }
                         catch (Exception e)
                         {
-                            // Audit.ReplicationFailed();
+                            Audit.ReplicationFailed();
                             Console.WriteLine(e);
                         }
 

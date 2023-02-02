@@ -1,125 +1,200 @@
 Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/29/2023 7:11:53 PM
-Poruka:  Rizik nizak.
-Rizik:  Low;
-------------------------------------
-Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/29/2023 7:11:56 PM
-Poruka:  Pripazite, rizik raste
-Rizik:  Medium;
-------------------------------------
-Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/29/2023 7:23:07 PM
-Poruka:  Rizik nizak.
-Rizik:  Low;
-------------------------------------
-Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/29/2023 8:40:33 PM
-Poruka:  Pripazite, rizik raste
-Rizik:  Medium;
-------------------------------------
-Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/29/2023 8:40:39 PM
-Poruka:  Rizik nizak.
-Rizik:  Low;
-------------------------------------
-Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/29/2023 7:11:53 PM
-Poruka:  Rizik nizak.
-Rizik:  Low;
-------------------------------------
-Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/29/2023 7:11:56 PM
-Poruka:  Pripazite, rizik raste
-Rizik:  Medium;
-------------------------------------
-Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/30/2023 12:07:52 PM
+Vreme generisanja alarma 2/2/2023 5:06:24 PM
 Poruka:  Veoma visok rizik
 Rizik:  High;
 ------------------------------------
 Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/30/2023 12:07:55 PM
+Vreme generisanja alarma 2/2/2023 5:06:25 PM
 Poruka:  Pripazite, rizik raste
 Rizik:  Medium;
 ------------------------------------
 Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/30/2023 12:07:58 PM
+Vreme generisanja alarma 2/2/2023 5:06:26 PM
 Poruka:  Pripazite, rizik raste
 Rizik:  Medium;
 ------------------------------------
 Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/30/2023 12:15:39 PM
+Vreme generisanja alarma 2/2/2023 5:06:26 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:06:27 PM
 Poruka:  Veoma visok rizik
 Rizik:  High;
 ------------------------------------
 Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/30/2023 12:15:39 PM
+Vreme generisanja alarma 2/2/2023 5:08:00 PM
+Poruka:  Rizik nizak.
+Rizik:  Low;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:08:23 PM
+Poruka:  Rizik nizak.
+Rizik:  Low;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:08:24 PM
 Poruka:  Pripazite, rizik raste
 Rizik:  Medium;
 ------------------------------------
 Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/30/2023 12:15:40 PM
-Poruka:  Pripazite, rizik raste
-Rizik:  Medium;
-------------------------------------
-Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/30/2023 12:15:41 PM
-Poruka:  Pripazite, rizik raste
-Rizik:  Medium;
-------------------------------------
-Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/30/2023 12:15:41 PM
-Poruka:  Pripazite, rizik raste
-Rizik:  Medium;
-------------------------------------
-Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/31/2023 10:12:27 PM
-Poruka:  Pripazite, rizik raste
-Rizik:  Medium;
-------------------------------------
-Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/31/2023 10:14:36 PM
-Poruka:  Pripazite, rizik raste
-Rizik:  Medium;
-------------------------------------
-Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/31/2023 10:14:37 PM
+Vreme generisanja alarma 2/2/2023 5:08:25 PM
 Poruka:  Veoma visok rizik
 Rizik:  High;
 ------------------------------------
 Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/31/2023 10:27:27 PM
+Vreme generisanja alarma 2/2/2023 5:08:26 PM
 Poruka:  Pripazite, rizik raste
 Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:11:29 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:11:30 PM
+Poruka:  Veoma visok rizik
+Rizik:  High;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:11:31 PM
+Poruka:  Rizik nizak.
+Rizik:  Low;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:11:31 PM
+Poruka:  Veoma visok rizik
+Rizik:  High;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:11:32 PM
+Poruka:  Veoma visok rizik
+Rizik:  High;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:16:48 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:16:49 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:16:49 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:16:50 PM
+Poruka:  Rizik nizak.
+Rizik:  Low;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:16:50 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:20:34 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:21:27 PM
+Poruka:  Veoma visok rizik
+Rizik:  High;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:21:28 PM
+Poruka:  Veoma visok rizik
+Rizik:  High;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:21:33 PM
+Poruka:  Veoma visok rizik
+Rizik:  High;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:21:35 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:26:19 PM
+Poruka:  Rizik nizak.
+Rizik:  Low;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:26:21 PM
+Poruka:  Veoma visok rizik
+Rizik:  High;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:26:22 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:26:22 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:26:23 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 4:26:25 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 4:26:25 PM
+Poruka:  Veoma visok rizik
+Rizik:  High;
 ------------------------------------
 Ime klijenta:  wcfservice
-Vreme generisanja alarma 1/31/2023 11:38:44 PM
-Poruka:  Pripazite, rizik raste
-Rizik:  Medium;
+Vreme generisanja alarma 2/2/2023 5:28:25 PM
+Poruka:  Veoma visok rizik
+Rizik:  High;
 ------------------------------------
 Ime klijenta:  wcfservice
-Vreme generisanja alarma 1/31/2023 11:38:50 PM
-Poruka:  Pripazite, rizik raste
-Rizik:  Medium;
+Vreme generisanja alarma 2/2/2023 5:28:25 PM
+Poruka:  Veoma visok rizik
+Rizik:  High;
 ------------------------------------
-Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/31/2023 11:38:56 PM
-Poruka:  Pripazite, rizik raste
-Rizik:  Medium;
-------------------------------------
-Ime klijenta:  wcfclient
-Vreme generisanja alarma 1/31/2023 11:39:01 PM
+Ime klijenta:  wcfservice
+Vreme generisanja alarma 2/2/2023 5:28:26 PM
 Poruka:  Rizik nizak.
 Rizik:  Low;
 ------------------------------------
 Ime klijenta:  wcfservice
-Vreme generisanja alarma 1/31/2023 11:39:05 PM
+Vreme generisanja alarma 2/2/2023 4:28:56 PM
+Poruka:  Rizik nizak.
+Rizik:  Low;
+------------------------------------
+Ime klijenta:  wcfservice
+Vreme generisanja alarma 2/2/2023 4:28:58 PM
+Poruka:  Rizik nizak.
+Rizik:  Low;
+------------------------------------
+Ime klijenta:  wcfservice
+Vreme generisanja alarma 2/2/2023 4:29:00 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
+------------------------------------
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:29:59 PM
 Poruka:  Veoma visok rizik
 Rizik:  High;
 ------------------------------------
-Ime klijenta:  wcfservice
-Vreme generisanja alarma 1/31/2023 11:39:06 PM
-Poruka:  Veoma visok rizik
-Rizik:  High;
+Ime klijenta:  wcfclient
+Vreme generisanja alarma 2/2/2023 5:30:01 PM
+Poruka:  Pripazite, rizik raste
+Rizik:  Medium;
 ------------------------------------

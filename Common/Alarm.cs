@@ -16,6 +16,7 @@ namespace AlarmGenerateService
         private string nameOfClient;
         private string message;
         private TypeOfRisk typeOfRisk;
+        private bool replicated;
 
         public Alarm() { }
         public Alarm(DateTime timeOfGenerete, string nameOfClient, string message, TypeOfRisk typeOfRisk)
@@ -24,6 +25,7 @@ namespace AlarmGenerateService
             this.NameOfClient = nameOfClient;
             this.Message = message;
             this.TypeOfRisk = typeOfRisk;
+            this.Replicated = false;
         }
         [DataMember]
         public DateTime TimeOfGenerete { get => timeOfGenerete; set => timeOfGenerete = value; }
@@ -33,6 +35,8 @@ namespace AlarmGenerateService
         public string Message { get => message; set => message = value; }
         [DataMember]
         public TypeOfRisk TypeOfRisk { get => typeOfRisk; set => typeOfRisk = value; }
+        [DataMember]
+        public bool Replicated { get => replicated; set => replicated = value; }
 
         public TypeOfRisk CalculateRisk()
         {

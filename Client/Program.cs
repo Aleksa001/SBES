@@ -51,14 +51,17 @@ namespace Client
                     {
                         case 1:
                             // code block
-                            List<string> lista = proxy.CurrentStateOfBase();
-                            
-                                foreach (string s in lista)
+                            List<Alarm> lista = proxy.CurrentStateOfBase();
+                            if (lista.Count() > 0)
+                            {
+                                foreach (Alarm s in lista)
                                 {
-
-                                    Console.WriteLine(s);
+                                    Console.WriteLine($"Alarm:\n\tMessage:{s.Message}\n\tClient:{s.NameOfClient}.\n\tDate:{s.TimeOfGenerete}");
                                 }
-                            
+                            } else
+                            {
+                                Console.WriteLine("Nema nijednog alarma.");
+                            }
                             break;
                         case 2:
                             // code block
@@ -103,10 +106,6 @@ namespace Client
 
                 }
             }
-
-            Console.ReadLine();
-
-
         }
     }
 }

@@ -53,9 +53,9 @@ namespace Client
               
         }
 
-        public List<string> CurrentStateOfBase()
+        public List<Alarm> CurrentStateOfBase()
         {
-            List<string> lista = new List<string>();
+            List<Alarm> lista = new List<Alarm>();
             try
             {
               lista = factory.CurrentStateOfBase();
@@ -114,7 +114,6 @@ namespace Client
             {
                 Console.WriteLine("Korisnik nema pravo pristupa ovoj metodi!\tPotrebna permisija: AlarmAdmin!");
                 return false;
-                Console.WriteLine(e.Message);
             }
         }
 

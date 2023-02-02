@@ -63,15 +63,15 @@ namespace AlarmGenerateService
 
         }
 
-        public List<string> CurrentStateOfBase()
+        public List<Alarm> CurrentStateOfBase()
         {
             CustomPrincipal principal = Thread.CurrentPrincipal as CustomPrincipal;
             string userName = Formater.ParseName(principal.Identity.Name);
             if (Thread.CurrentPrincipal.IsInRole("Read"))
             {
                 Console.WriteLine("Read successfully executed");
-                List<string> lst = File.ReadAllLines(path).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
-                return lst;
+                List<Alarm> list = ReadFromFile();
+                return list;
             }
             else
             {
@@ -80,7 +80,6 @@ namespace AlarmGenerateService
                string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
                    "For this method need to be member of group Reader.", name, time.TimeOfDay);
                throw new FaultException<SecurityException>(new SecurityException(message));
-                
             }
         }
 
@@ -101,8 +100,6 @@ namespace AlarmGenerateService
                 string message = String.Format("Access is denied. User {0} try to call Read method (time : {1}). " +
                     "For this method need to be member of group Reader.", name, time.TimeOfDay);
                 throw new FaultException<SecurityException>(new SecurityException(message));
-
-                return false;
             }
         }
 
@@ -140,7 +137,7 @@ namespace AlarmGenerateService
                     string message = String.Format("Access is denied. User {0} try to call AlarmAdmin method (time : {1}). " +
                         "For this method need to be member of group AlarmAdmin.", name, time.TimeOfDay);
                     throw new FaultException<SecurityException>(new SecurityException(message));
-                    return false;
+                    
                 }
             }
             catch(Exception e)
@@ -163,7 +160,19 @@ namespace AlarmGenerateService
             File.AppendAllText(path, json+Environment.NewLine);
         }
 
-        private List<Alarm> ReadFromFile()
+        public void WriteReplicatedAlarms(List<Alarm> alarms)
+        {
+
+            File.WriteAllText(path, "");
+            foreach(Alarm a in alarms)
+            {
+                string json = serializer.Serialize(a);
+                File.AppendAllText(path, json + Environment.NewLine);
+            }
+        }
+
+
+        public List<Alarm> ReadFromFile()
         {
             List<Alarm> alarms = new List<Alarm>();
             try
@@ -190,18 +199,17 @@ namespace AlarmGenerateService
             try
             {
                 alarms=ReadFromFile();
-                cnt = alarms.Count() % 5;
-                if (cnt > 0)
+                
+                foreach(Alarm a in alarms)
                 {
-                    Console.WriteLine("Server je prethodno pukao, ostali su nereplicirani podaci.");
-                    for (int i = 0; i < cnt; i++)
+                    if (!a.Replicated)
                     {
-                        buffer2[i] = alarms[i];
-                        Alarm a = alarms[i];
+                        buffer2[cnt] = a;
                         Console.WriteLine("\nIme klijenta: " + a.NameOfClient);
                         Console.WriteLine("\tVreme: " + a.TimeOfGenerete);
                         Console.WriteLine("\tPoruka: " + a.Message);
                         Console.WriteLine("\tRizik: " + a.TypeOfRisk.ToString());
+                        cnt++;
                     }
                 }
             }

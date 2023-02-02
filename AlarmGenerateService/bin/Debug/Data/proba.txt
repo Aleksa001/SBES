@@ -1,2 +1,24 @@
-{"timeOfGenerete":"2023-01-31T22:39:46.9276408Z","nameOfClient":"wcfclient","message":"Rizik nizak.","typeOfRisk":0}
-{"timeOfGenerete":"2023-01-31T22:39:47.5526989Z","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1}
+{"timeOfGenerete":"2023-02-02T16:16:48.2346191Z","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:16:49.2226921Z","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:16:49.7667353Z","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:16:50.2868813Z","nameOfClient":"wcfclient","message":"Rizik nizak.","typeOfRisk":0,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:16:50.8758175Z","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:16:55.5111652Z","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:16:56.1152118Z","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:20:34.1251173Z","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:21:27.5785161Z","nameOfClient":"wcfclient","message":"Veoma visok rizik","typeOfRisk":2,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:21:28.5365685Z","nameOfClient":"wcfclient","message":"Veoma visok rizik","typeOfRisk":2,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:21:33.0659077Z","nameOfClient":"wcfclient","message":"Veoma visok rizik","typeOfRisk":2,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:21:35.5180935Z","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:26:19.8926853Z","nameOfClient":"wcfclient","message":"Rizik nizak.","typeOfRisk":0,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:26:21.7598266Z","nameOfClient":"wcfclient","message":"Veoma visok rizik","typeOfRisk":2,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:26:22.4448756Z","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:26:22.9939176Z","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:26:23.5939646Z","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:26:25.2810930Z","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:26:25.8751319Z","nameOfClient":"wcfclient","message":"Veoma visok rizik","typeOfRisk":2,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:28:56.7927973Z","nameOfClient":"wcfservice","message":"Rizik nizak.","typeOfRisk":0,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:28:58.7149418Z","nameOfClient":"wcfservice","message":"Rizik nizak.","typeOfRisk":0,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:29:00.2230539Z","nameOfClient":"wcfservice","message":"Pripazite, rizik raste","typeOfRisk":1,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:29:59.8256691Z","nameOfClient":"wcfclient","message":"Veoma visok rizik","typeOfRisk":2,"replicated":true}
+{"timeOfGenerete":"2023-02-02T16:30:01.3227780Z","nameOfClient":"wcfclient","message":"Pripazite, rizik raste","typeOfRisk":1,"replicated":true}

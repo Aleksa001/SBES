@@ -14,7 +14,7 @@ namespace Common
     {
         [OperationContract]
         [FaultContract(typeof(SecurityException))]
-        List<string> CurrentStateOfBase();
+        List<Alarm> CurrentStateOfBase();
 
         [OperationContract]
         [FaultContract(typeof(SecurityException))]
